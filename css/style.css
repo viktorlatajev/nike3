@@ -851,13 +851,27 @@ p.new {
 
 .categories>.men>button {
     position: absolute;
-    left: 150px;
-    right: 150px;
-    top: 2100px;
-    bottom: 1500px;
+    width: 256px;
+    height: 62px;
+    left: 200px;
+    right: 15.63%;
+    top: 2650px;
+    bottom: 174px;
+    border: none;
 
     background: #FFFFFF;
     border-radius: 31px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
     
 }
 
@@ -869,10 +883,62 @@ p.new {
     top: 1960px;
 }
 
+.categories>.women>button {
+    position: absolute;
+    width: 256px;
+    height: 62px;
+    left: 835px;
+    right: 15.63%;
+    top: 2650px;
+    bottom: 174px;
+    border: none;
+
+    background: #FFFFFF;
+    border-radius: 31px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+    
+}
+
 .categories>.kids>img {
     position: absolute;
     width: 620px;
     height: 944px;
     left: 1281px;
     top: 1960px;
+}
+
+.categories>.kids>button {
+    position: absolute;
+    width: 256px;
+    height: 62px;
+    left: 1480px;
+    right: 15.63%;
+    top: 2650px;
+    bottom: 174px;
+    border: none;
+
+    background: #FFFFFF;
+    border-radius: 31px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+    
 }
