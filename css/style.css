@@ -1417,3 +1417,290 @@ h1.news {
     left: 688px;
     top: 4820px;
 }
+
+.clothes>a>img.man{
+    position: absolute;
+    width: 261px;
+    height: 375px;
+    left: 1249px;
+    top: 4820px;
+}
+
+.clothes>a>img.woman{
+    position: absolute;
+    width: 261px;
+    height: 375px;
+    left: 1520px;
+    top: 4820px;
+}
+
+.k7>p.date {
+    position: absolute;
+    width: 371px;
+    height: 146px;
+    left: 131px;
+    top: 5180px;
+
+    /* Light 18 */
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+
+.k7>h1 {
+    position: absolute;
+    width: 461px;
+    height: 146px;
+    left: 131px;
+    top: 5233px;
+
+    /* bold 36* */
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.067em;
+
+    color: #000000;
+}
+
+.k7>p.text {
+    position: absolute;
+    width: 526px;
+    height: 158px;
+    left: 134px;
+    top: 5355px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.10em;
+
+    color: #000000;
+}
+
+.k7>a>img.arrow1{
+    position: absolute;
+    width: 144px;
+    height: 11px;
+    left: 131px;
+    top: 5580px;
+
+
+}
+.k7>a.arrow1 {
+    position: absolute;
+    width: 167px;
+    height: 37px;
+    left: 300px;
+    top: 5566px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.155em;
+
+    color: #000000;
+}
+
+
+
+.ycss>p.date {
+    position: absolute;
+    width: 371px;
+    height: 146px;
+    left: 688px;
+    top: 5180px;
+
+    /* Light 18 */
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+
+.ycss>h1 {
+    position: absolute;
+    width: 461px;
+    height: 146px;
+    left: 688px;
+    top: 5233px;
+
+    /* bold 36* */
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.067em;
+
+    color: #000000;
+}
+
+.ycss>p.text {
+    position: absolute;
+    width: 526px;
+    height: 158px;
+    left: 691px;
+    top: 5355px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.10em;
+
+    color: #000000;
+}
+
+.ycss>a>img.arrow2{
+    position: absolute;
+    width: 144px;
+    height: 11px;
+    left: 688px;
+    top: 5580px;
+
+
+}
+.ycss>a.arrow2 {
+    position: absolute;
+    width: 167px;
+    height: 37px;
+    left: 857px;
+    top: 5566px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.155em;
+
+    color: #000000;
+}
+
+
+
+.clothes>p.date {
+    position: absolute;
+    width: 371px;
+    height: 146px;
+    left: 1247px;
+    top: 5180px;
+
+    /* Light 18 */
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+
+.clothes>h1 {
+    position: absolute;
+    width: 461px;
+    height: 146px;
+    left: 1247px;
+    top: 5233px;
+
+    /* bold 36* */
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.067em;
+
+    color: #000000;
+}
+
+.clothes>p.text {
+    position: absolute;
+    width: 526px;
+    height: 158px;
+    left: 1250px;
+    top: 5355px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.10em;
+
+    color: #000000;
+}
+
+.clothes>a>img.arrow3{
+    position: absolute;
+    width: 144px;
+    height: 11px;
+    left: 1247px;
+    top: 5580px;
+
+
+}
+.clothes>a.arrow3 {
+    position: absolute;
+    width: 167px;
+    height: 37px;
+    left: 1414px;
+    top: 5566px;
+
+    /* REGULAR 18** */
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.155em;
+
+    color: #000000;
+}
