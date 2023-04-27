@@ -1704,3 +1704,35 @@ h1.news {
 
     color: #000000;
 }
+
+.news>p.all {
+    position: absolute;
+    width: 345px;
+    height: 146px;
+    left: 1556px;
+    top: 4660px;
+
+    /* Regular 18 */
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.155em;
+
+    color: #000000;
+}
+
+.mailing {
+    background-color: #000;
+}
+
+.mailing>img {
+    position: absolute;
+    width: 538px;
+    height: 619px;
+    left: 414px;
+    top: 5950px;
+}
