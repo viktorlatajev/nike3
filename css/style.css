@@ -1725,8 +1725,12 @@ h1.news {
     color: #000000;
 }
 
-.mailing {
-    background-color: #000;
+#mailing {
+    position: absolute;
+    width: 1903.4px;
+    height: 882px;
+    top: 5760px;
+    background-color: #f9f9f9;
 }
 
 .mailing>img {
@@ -1734,5 +1738,22 @@ h1.news {
     width: 538px;
     height: 619px;
     left: 414px;
-    top: 5950px;
+    top: 132px;
+}
+
+.rectangle9>img.rectangle {
+    position: absolute;
+    width: 559px;
+    height: 619px;
+    left: 952px;
+    top: 132px;
+}
+
+.rectangle9>img.logoblack {
+    position: absolute;
+    width: 73px;
+    height: 26px;
+    left: 988px;
+    top: 187px;
+
 }
