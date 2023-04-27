@@ -2267,3 +2267,46 @@ img.gps {
     top: 434px;
     left: 1762px;
 }
+
+p.gps {
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    left: 1665px;
+    top: 434px;
+
+    /* Bold 18 */
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+a>img.fb {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 64px;
+    left: 1654px;
+}
+a>img.instagram {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 64px;
+    left: 1708px;
+}
+a>img.twitter {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 64px;
+    left: 1762px;
+}
