@@ -10,6 +10,7 @@ var button5 = document.getElementsByClassName('black');
 var elements = document.getElementsByClassName('main')[0];
 console.log(elements);
 
+
 // навешиваем обработчик на событие клик
 button[0].addEventListener('click', function () {
   elements.src = "img/air_force.jpg";
