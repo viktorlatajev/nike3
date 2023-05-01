@@ -1,42 +1,58 @@
-var button = document.getElementsByClassName('black_red');
-var button1 = document.getElementsByClassName('gold');
-var button2 = document.getElementsByClassName('wb');
-var button3 = document.getElementsByClassName('white');
-var button4 = document.getElementsByClassName('red');
-var button5 = document.getElementsByClassName('black');
+var img = document.getElementsByClassName('black_red');
+var img1 = document.getElementsByClassName('gold');
+var img2 = document.getElementsByClassName('wb');
+var img3 = document.getElementsByClassName('white');
+var img4 = document.getElementsByClassName('red');
+var img5 = document.getElementsByClassName('black');
 
 
 
 var elements = document.getElementsByClassName('main')[0];
+var elements1 = document.getElementsByClassName('br_verh')[0];
+var elements2 = document.getElementsByClassName('br_niz')[0];
+
 console.log(elements);
 
 
+
 // навешиваем обработчик на событие клик
-button[0].addEventListener('click', function () {
+img[0].addEventListener('click', function () {
   elements.src = "img/air_force.jpg";
+  elements1.src = "img/br_verh.jpg";
+  elements2.src = "img/br_niz.jpg";
 })
 
 
-button1[0].addEventListener('click', function () {
+img1[0].addEventListener('click', function () {
     elements.src = "img/gold.jpg";
+    elements1.src = "img/gold_verh.jpg";
+    elements2.src = "img/gold_niz.jpg";
 })
 
 
-button2[0].addEventListener('click', function () {
+img2[0].addEventListener('click', function () {
   elements.src = "img/wb.jpg";
+  elements1.src = "img/wb_verh.jpg";
+  elements2.src = "img/br_niz.jpg";
 })
 
 
-button3[0].addEventListener('click', function () {
+img3[0].addEventListener('click', function () {
   elements.src = "img/white_force.jpg";
+  elements1.src = "img/white_verh.jpg";
+  elements2.src = "img/gold_niz.jpg";
 })
 
 
-button4[0].addEventListener('click', function () {
+img4[0].addEventListener('click', function () {
   elements.src = "img/red.jpg";
+  elements1.src = "img/red_verh.jpg";
+  elements2.src = "img/gold_niz.jpg";
 })
 
 
-button5[0].addEventListener('click', function () {
+img5[0].addEventListener('click', function () {
   elements.src = "img/black.jpg";
+  elements1.src = "img/black_niz.jpg";
+  elements2.src = "img/br_niz.jpg";
 })
