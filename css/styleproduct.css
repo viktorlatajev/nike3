@@ -763,7 +763,7 @@ p.descr {
     color: #000000;
 }
 
-h1.like {
+h1.new {
     position: absolute;
     width: 671px;
     height: 146px;
@@ -789,7 +789,7 @@ h1.like {
     position: absolute;
     width: 394px;
     height: 400px;
-    left: 133px;
+    left: 117px;
     top: 556px;
 }
 
@@ -797,7 +797,7 @@ h1.like {
     position: absolute;
     width: 394px;
     height: 400px;
-    left: 552px;
+    left: 536px;
     top: 556px;
 }
 
@@ -805,7 +805,7 @@ h1.like {
     position: absolute;
     width: 394px;
     height: 400px;
-    left: 971px;
+    left: 955px;
     top: 556px;
 }
 
@@ -813,7 +813,7 @@ h1.like {
     position: absolute;
     width: 394px;
     height: 400px;
-    left: 1390px;
+    left: 1374px;
     top: 556px;
 }
 
@@ -821,7 +821,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 135px;
+    left: 117px;
     top: 922px;
 
     /* Bold 18 +167px*/
@@ -842,7 +842,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 554px;
+    left: 536px;
     top: 922px;
     
     /* Bold 18 */
@@ -863,7 +863,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 973px;
+    left: 955px;
     top: 922px;
     
     /* Bold 18 */
@@ -884,7 +884,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 1391px;
+    left: 1374px;
     top: 922px;
     
     /* Bold 18 */
@@ -905,7 +905,7 @@ h1.like {
     position: absolute;
     width: 150px;
     height: 146px;
-    left: 425px;
+    left: 407px;
     top: 922px;
 
     /* Bold 18 */
@@ -929,7 +929,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 135px;
+    left: 117px;
     top: 976px;
 
     /* Regular 18 */
@@ -949,7 +949,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 554px;
+    left: 536px;
     top: 976px;
 
     /* Regular 18 */
@@ -969,7 +969,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 973px;
+    left: 955px;
     top: 976px;
 
     /* Regular 18 */
@@ -989,7 +989,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 1392px;
+    left: 1374px;
     top: 976px;
 
     /* Regular 18 */
@@ -1010,7 +1010,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 135px;
+    left: 117px;
     top: 1039px;
 
     /* Light 18 */
@@ -1030,7 +1030,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 554px;
+    left: 536px;
     top: 1039px;
 
     /* Light 18 */
@@ -1050,7 +1050,7 @@ h1.like {
     position: absolute;
     width: 371px;
     height: 146px;
-    left: 973px;
+    left: 955px;
     top: 1039px;
 
     /* Light 18 */
@@ -1071,7 +1071,7 @@ h1.like {
     width: 26px;
     height: 24px;
     
-    left: 490px;
+    left: 472px;
     right: 72.68%;
     top: 1100px;
     bottom: 18.34%;
@@ -1084,7 +1084,7 @@ h1.like {
     width: 26px;
     height: 24px;
     
-    left: 1750px;
+    left: 1732px;
     right: 72.68%;
     top: 1100px;
     bottom: 18.34%;
@@ -1097,7 +1097,7 @@ h1.like {
     width: 26px;
     height: 24px;
     
-    left: 910px;
+    left: 892px;
     right: 72.68%;
     top: 1100px;
     bottom: 18.34%;
@@ -1110,12 +1110,54 @@ h1.like {
     width: 26px;
     height: 24px;
     
-    left: 1330px;
+    left: 1312px;
     right: 72.68%;
     top: 1100px;
     bottom: 18.34%;
 
     color: #FD656F;
+}
+
+.rectangle2>p.skidka {
+    position: absolute;
+    width: 371px;
+    height: 146px;
+    left: 845px;
+    top: 922px;
+    
+    /* Bold 18 */
+    
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FF3A4C;
+}
+
+.rectangle2>p.price {
+    position: absolute;
+    width: 371px;
+    height: 146px;
+    left: 613px;
+    top: 922px;
+    
+    /* Bold 18 */
+    
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FF3A4C;
 }
 
 
