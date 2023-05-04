@@ -13,9 +13,12 @@ class Cmodel {
         $mysqli->set_charset('utf8');
 
         $query = "Select * From goods";
+        $queryNews = "Select * From news";
 
         $result = $mysqli->query($query);
+        $resultNews = $mysqli->query($queryNews);
         $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
+        $arrayResultNews = $resultNews->fetch_all(MYSQLI_ASSOC);
 
         $host = '127.0.0.1';
         $db   = 'nike';
@@ -32,7 +35,9 @@ class Cmodel {
         $pdo = new PDO($dsn, $user, $pass, $opt);
          
         $result = $pdo->query('SELECT * FROM goods');
+        $resultNews = $pdo->query('SELECT * FROM news');
         $arrayResult = $result->fetchAll();
+        $arrayResultNews = $resultNews->fetchAll();
        
         // $arrayResult[] = array(
         //     'TITLE' => 'Blog hosting site',

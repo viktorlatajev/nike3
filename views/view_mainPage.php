@@ -29,7 +29,9 @@
         <div class="carousel-item active" data-bs-interval="5000" style="background-color: #2C95F5;">
           
           <div class="circle"></div>
-          <a class="navbar-brand" href="index.html">
+
+          
+          <a class="navbar-brand" href="index2.html">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
             <nav class="navbar navbar-expand-lg">
@@ -210,17 +212,32 @@
       <div class="new">
         <h1 class="new">Новинки</h1>
         <p class="new">Смотреть все новинки</p>
+
+
+        
+      
+
         <?php foreach ($arrayResult as $data) {?>
+
+
+          <?php if ($data["class"] == "rectangle4") {
+              // echo 'yes';
+              $link = 'airforce.html';
+          
+        } else {
+          // echo 'no';
+          $link = "#";
+        }?>
         <div class="<?=$data["class"]?>">
             
-          <a href="#new">
+          <a href=<?=$link ?>>
             <img src="<?=$data["image_path"]?>" alt="lebron">
           </a>
           <p><?=$data["price"]?></p>
           <p class="new">НОВИНКА</p>
           <p class="name"><?=$data["name"]?></p>
           <p class="colors"><?=$data["colors"]?></p>
-          <img class="pink_heart" src="img/border_heart.png" alt="pink_heart">
+          <!-- <img class="pink_heart" src="img/border_heart.png" alt="pink_heart"> -->
         </div>
         <?php } ?>
         
@@ -347,17 +364,19 @@
         </h1>
 
         <p class="all">Смотреть все новости</p>
-
-        <div class="k7">
-          <a href="#news">
-            <img src="img/k7.jpg" alt="k7">
-          </a>
-          <p class="date">10.04.2023</p>
-          <h1>Что нового в Kyrie 7</h1>
-          <p class="text">10 апреля 2023г. - Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах</p>
-          <a href="#news"><img class="arrow1" src="img/arrow.png" alt="arrow"></a>
-          <a class="arrow1" href="#news">Узнать больше</a>
-        </div>
+        
+          <div class="k7">
+            <a href="#news">
+              <img src="img/k7.jpg" alt="k7">
+            </a>
+            <p class="date">10.04.2023</p>
+            <h1>Что нового в Kyrie 7</h1>
+            <p class="text">Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах</p>
+            <a href="#news"><img class="arrow1" src="img/arrow.png" alt="arrow"></a>
+            <a class="arrow1" href="#news">Узнать больше</a>
+          </div>
+        
+        
 
         <div class="ycss">
           <a href="#news">
@@ -386,6 +405,7 @@
           <a href="#news"><img class="arrow3" src="img/arrow.png" alt="arrow"></a>
           <a class="arrow3" href="#news">Узнать больше</a>
         </div>
+
       </div>
     </section>
 
