@@ -11,6 +11,10 @@ var elements = document.getElementsByClassName('main')[0];
 var elements1 = document.getElementsByClassName('br_verh')[0];
 var elements2 = document.getElementsByClassName('br_niz')[0];
 
+var imgborder = document.getElementsByClassName('border_heart')[0];
+var elements3 = document.getElementsByClassName('pink_heart')[0];
+
+
 console.log(elements);
 
 
@@ -55,4 +59,8 @@ img5[0].addEventListener('click', function () {
   elements.src = "img/black.jpg";
   elements1.src = "img/black_niz.jpg";
   elements2.src = "img/br_niz.jpg";
+})
+
+imgborder[0].addEventListener('click', function () {
+  imgborder.src = "img/pink_heart.png";
 })

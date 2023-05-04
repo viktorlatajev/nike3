@@ -19,11 +19,7 @@
 
 <body>
 
-<?php
-var_dump($arrayResult[0]["image_path"]);
 
-
-?>
 
     
     <!-- SLIDER -->
@@ -215,19 +211,20 @@ var_dump($arrayResult[0]["image_path"]);
         <h1 class="new">Новинки</h1>
         <p class="new">Смотреть все новинки</p>
         <?php foreach ($arrayResult as $data) {?>
-        <div class="rectangle1">
+        <div class="<?=$data["class"]?>">
             
           <a href="#new">
-            <img src="img/lebron.jpg" alt="lebron">
+            <img src="<?=$data["image_path"]?>" alt="lebron">
           </a>
-          <p>156 €</p>
+          <p><?=$data["price"]?></p>
           <p class="new">НОВИНКА</p>
-          <p class="name">LEBRON 18 LOW “NEON LIGHTS”</p>
-          <p class="colors">Доступно +1 цвет</p>
-          <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
+          <p class="name"><?=$data["name"]?></p>
+          <p class="colors"><?=$data["colors"]?></p>
+          <img class="pink_heart" src="img/border_heart.png" alt="pink_heart">
         </div>
+        <?php } ?>
         
-        <div class="rectangle2">
+<!--        <div class="rectangle2">
           <a href="#new">
             <img src="img/vapormax_evo1.jpg" alt="vapormax_evo">
           </a>
@@ -249,15 +246,15 @@ var_dump($arrayResult[0]["image_path"]);
         
             <div class="rectangle4">
             <a href="airforce.html">
-                <img src="<?=$data["image_path"]?>" alt="air_force">
+                <img src="" alt="air_force">
             </a>
             <p>204 €</p>
             <p class="new">НОВИНКА</p>
             <p class="name">NIKE AIR FORCE 1 LOW CR7 BY YOU</p>
             <p class="colors">Доступно +5 цветов</p>
             <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-            </div>
-        <?php } ?>
+            </div> -->
+        
       </div>
       
     </section>
@@ -456,7 +453,7 @@ var_dump($arrayResult[0]["image_path"]);
     </section>
     
     
-    
+
     
     
     
