@@ -5,8 +5,9 @@ require_once ('./controllers/CController.php');
 class CView {
     public function ViewMainPage(){
         $controller = new CController();
-        $arrayResult = $controller->SetMainPage();
+        $arrayAll = $controller->SetMainPage();
         include 'views/view_mainPage.php';
-        return $arrayResult;
+        return $arrayAll;
     }
+
 }

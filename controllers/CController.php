@@ -10,7 +10,12 @@ class CController {
     public function SetMainPage () {
         $model = new CModel();
         $resultModel = $model->GetData();
+        $resultNews = $model->GetDataNews();
 
-        return $resultModel;
+        $resultAll = [];
+        $resultAll[0] = $resultModel;
+        $resultAll[1] = $resultNews;
+        
+        return $resultAll;
     }
 }

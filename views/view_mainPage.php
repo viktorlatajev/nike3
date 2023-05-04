@@ -217,7 +217,7 @@
         
       
 
-        <?php foreach ($arrayResult as $data) {?>
+        <?php foreach ($arrayAll[0] as $data) {?>
 
 
           <?php if ($data["class"] == "rectangle4") {
@@ -365,20 +365,24 @@
 
         <p class="all">Смотреть все новости</p>
         
-          <div class="k7">
+
+        <?php foreach ($arrayAll[1] as $data) {?>
+          <div class="<?=$data["class"]?>">
             <a href="#news">
-              <img src="img/k7.jpg" alt="k7">
+              <img src="<?=$data["image_path"]?>" alt="k7">
             </a>
-            <p class="date">10.04.2023</p>
-            <h1>Что нового в Kyrie 7</h1>
-            <p class="text">Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах</p>
+            <p class="date"><?=$data["news_date"]?></p>
+            <h1><?=$data["name"]?></h1>
+            <p class="text"><?=$data["text"]?></p>
             <a href="#news"><img class="arrow1" src="img/arrow.png" alt="arrow"></a>
             <a class="arrow1" href="#news">Узнать больше</a>
           </div>
+        <?php } ?>
+          
         
         
 
-        <div class="ycss">
+        <!-- <div class="ycss"> 
           <a href="#news">
             <img src="img/ycss.jpg" alt="ycss">
           </a>
@@ -404,7 +408,7 @@
             определяют уникальную междисциплинарную приктику дизайна Nike</p>
           <a href="#news"><img class="arrow3" src="img/arrow.png" alt="arrow"></a>
           <a class="arrow3" href="#news">Узнать больше</a>
-        </div>
+        </div> -->
 
       </div>
     </section>
