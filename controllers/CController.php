@@ -11,10 +11,12 @@ class CController {
         $model = new CModel();
         $resultModel = $model->GetData();
         $resultNews = $model->GetDataNews();
+        $resultCollections = $model->GetDataCollections();
 
         $resultAll = [];
         $resultAll[0] = $resultModel;
         $resultAll[1] = $resultNews;
+        $resultAll[2] = $resultCollections;
         
         return $resultAll;
     }

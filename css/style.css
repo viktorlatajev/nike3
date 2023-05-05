@@ -1097,7 +1097,7 @@ h1.collection {
     color: #000000;
 }
 
-.rectangle7>p {
+.rectangle7>p.through {
     position: absolute;
     width: 371px;
     height: 146px;
@@ -1114,6 +1114,8 @@ h1.collection {
     display: flex;
     align-items: center;
     text-align: center;
+
+    text-decoration: line-through;
     
     color: #000000;
 }
@@ -1184,6 +1186,8 @@ h1.collection {
     /* Color */
     
     color: #FF3A4C;
+
+    background: none;
 }
 
 

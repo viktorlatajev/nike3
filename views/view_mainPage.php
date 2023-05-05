@@ -308,7 +308,7 @@
         <button>Посмотреть коллекцию</button>
         <img src="img/acg.jpg" alt="acg">
         
-        <div class="rectangle5">
+        <!-- <div class="rectangle5">
           <a href="#collection">
             <img src="img/horseman.jpg" alt="horseman">
           </a>
@@ -331,27 +331,48 @@
           <p class="name">NIKE ACG AIR NASU GORE-TEX</p>
           
           <img class="border_heart" src="img/border_heart.png" alt="border_heart">
+        </div> -->
+        <?php foreach ($arrayAll[2] as $data) {?>
+
+          <?php if ($data["discount"] == "1") {
+              echo 'yes';
+              $discount = 'СКИДКА';
+          
+          } else {
+            echo 'no';
+           $discount = "";
+          }?>
+
+          <?php if ($data["colors"] == "1") {
+              echo 'yes';
+              $color = 'Доступно +3 цвета';
+          
+          } else {
+            echo 'no';
+           $color = "";
+          }?>
+          <div class="<?=$data["class"]?>">
+            <a href="#collection">
+              <img src="<?=$data["image_path"]?>" alt="acg_tshirt">
+            </a>
+            <p class="through"><?=$data["price"]?></p>
+            <p class="price"><?=$data["discount_price"]?></p>
+            <p class="new"><?=$discount?></p>
+            <p class="name"><?=$data["name"]?></p>
+            <p class="colors"><?=$color?></p>
+            <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
         </div>
-        <div class="rectangle7">
-          <a href="#collection">
-            <img src="img/acg_tshirt.jpg" alt="acg_tshirt">
-          </a>
-          <p><s>80 €</s></p>
-          <p class="price">59 €</p>
-          <p class="new">СКИДКА</p>
-          <p class="name">NIKE ACG MEN'S LONG-SLEEVE T-SHIRT</p>
-          <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-        </div>
-        <div class="rectangle8">
+        <?php } ?>
+        <!-- <div class="rectangle8">
           <a href="#collection">
             <img src="img/react.jpg" alt="react">
           </a>
           <p>134 €</p>
-          <!--<p class="new">НОВИНКА</p>-->
+          <p class="new">НОВИНКА</p>
           <p class="name">NIKE ACG REACT TERRA GOBE</p>
           <p class="colors">Доступно +3 цвета</p>
           <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-        </div>
+        </div> -->
 
       </div>
       
@@ -367,6 +388,8 @@
         
 
         <?php foreach ($arrayAll[1] as $data) {?>
+          
+
           <div class="<?=$data["class"]?>">
             <a href="#news">
               <img class="<?=$data["image_class"]?>" src="<?=$data["image_path"]?>">
@@ -398,7 +421,7 @@
 
         <div class="clothes">
           <a href="#news">
-            <img src="img/man_woman.png" alt="man_woman">
+            <img class="man_woman" src="img/man_woman.png" alt="man_woman">
           </a>
           <p class="date">18.04.2023</p>
           <h1>Новая линия одежды Nike</h1>

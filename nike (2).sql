@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 05 2023 г., 09:14
+-- Время создания: Май 05 2023 г., 11:35
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -20,6 +20,34 @@ SET time_zone = "+00:00";
 --
 -- База данных: `nike`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `collections`
+--
+
+CREATE TABLE `collections` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `image_path` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `class` varchar(255) NOT NULL,
+  `colors` tinyint(1) NOT NULL,
+  `discount` tinyint(1) NOT NULL,
+  `discount_price` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `collections`
+--
+
+INSERT INTO `collections` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`, `discount`, `discount_price`) VALUES
+(1, 'NIKE ACG “4TH HORSEMAN”', 'img/horseman.jpg', '', '156 €', 'rectangle5', 0, 0, ''),
+(2, 'NIKE ACG AIR NASU GORE-TEX', 'img/nasu.jpg', '', '127 €', 'rectangle6', 0, 0, ''),
+(3, 'NIKE ACG MEN\'S LONG-SLEEVE T-SHIRT', 'img/acg_tshirt.jpg', '', '80 €', 'rectangle7', 0, 1, '59 €'),
+(4, 'NIKE ACG REACT TERRA GOBE', 'img/react.jpg', '', '134 €', 'rectangle8', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -88,11 +116,17 @@ CREATE TABLE `news` (
 INSERT INTO `news` (`id`, `name`, `news_date`, `text`, `image_path`, `class`, `image_class`, `arrow_class`, `more`) VALUES
 (1, 'Что нового в Kyrie 7', '2023-04-10', 'Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах', 'img/k7.jpg', 'k7', 'k7', 'arrow1', 'arrow1'),
 (2, 'Вы не можете остановить нас', '2023-04-25', 'Серия “Вы не можете остановить нас” от Nike\r\nпразднует возвращение в наши спортивные сооружения после беспрецедентного сезона ограничений.', 'img/ycss.jpg', 'ycss', 'ycss', 'arrow2', 'arrow2'),
-(3, 'Новая линия одежды Nike', '2023-04-18', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', '', 'arrow3', 'arrow3');
+(3, 'Новая линия одежды Nike', '2023-04-18', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3');
 
 --
 -- Индексы сохранённых таблиц
 --
+
+--
+-- Индексы таблицы `collections`
+--
+ALTER TABLE `collections`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `goods`
@@ -115,6 +149,12 @@ ALTER TABLE `news`
 --
 -- AUTO_INCREMENT для сохранённых таблиц
 --
+
+--
+-- AUTO_INCREMENT для таблицы `collections`
+--
+ALTER TABLE `collections`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `goods`
