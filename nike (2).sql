@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 05 2023 г., 11:35
+-- Время создания: Май 05 2023 г., 12:20
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -36,18 +36,20 @@ CREATE TABLE `collections` (
   `class` varchar(255) NOT NULL,
   `colors` tinyint(1) NOT NULL,
   `discount` tinyint(1) NOT NULL,
-  `discount_price` varchar(255) NOT NULL
+  `discount_price` varchar(255) NOT NULL,
+  `popular` tinyint(1) NOT NULL,
+  `star` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `collections`
 --
 
-INSERT INTO `collections` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`, `discount`, `discount_price`) VALUES
-(1, 'NIKE ACG “4TH HORSEMAN”', 'img/horseman.jpg', '', '156 €', 'rectangle5', 0, 0, ''),
-(2, 'NIKE ACG AIR NASU GORE-TEX', 'img/nasu.jpg', '', '127 €', 'rectangle6', 0, 0, ''),
-(3, 'NIKE ACG MEN\'S LONG-SLEEVE T-SHIRT', 'img/acg_tshirt.jpg', '', '80 €', 'rectangle7', 0, 1, '59 €'),
-(4, 'NIKE ACG REACT TERRA GOBE', 'img/react.jpg', '', '134 €', 'rectangle8', 1, 0, '');
+INSERT INTO `collections` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`, `discount`, `discount_price`, `popular`, `star`) VALUES
+(1, 'NIKE ACG “4TH HORSEMAN”', 'img/horseman.jpg', '', '156 €', 'rectangle5', 0, 0, '', 0, 0),
+(2, 'NIKE ACG AIR NASU GORE-TEX', 'img/nasu.jpg', '', '127 €', 'rectangle6', 0, 0, '', 1, 1),
+(3, 'NIKE ACG MEN\'S LONG-SLEEVE T-SHIRT', 'img/acg_tshirt.jpg', '', '80 €', 'rectangle7', 0, 1, '59 €', 0, 0),
+(4, 'NIKE ACG REACT TERRA GOBE', 'img/react.jpg', '', '134 €', 'rectangle8', 1, 0, '', 0, 0);
 
 -- --------------------------------------------------------
 

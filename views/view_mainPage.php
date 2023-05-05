@@ -335,29 +335,40 @@
         <?php foreach ($arrayAll[2] as $data) {?>
 
           <?php if ($data["discount"] == "1") {
-              echo 'yes';
-              $discount = 'СКИДКА';
+              // echo 'yes';
+              $discount = '<span>СКИДКА</span>';
           
           } else {
-            echo 'no';
+            // echo 'no';
            $discount = "";
           }?>
 
           <?php if ($data["colors"] == "1") {
-              echo 'yes';
+              // echo 'yes';
               $color = 'Доступно +3 цвета';
           
           } else {
-            echo 'no';
+            // echo 'no';
+           $color = "";
+          }?>
+
+          <?php if ($data["class"] == "rectangle6") {
+              // echo 'yes';
+              $button = 'Доступно +3 цвета';
+          
+          } else {
+            // echo 'no';
            $color = "";
           }?>
           <div class="<?=$data["class"]?>">
             <a href="#collection">
               <img src="<?=$data["image_path"]?>" alt="acg_tshirt">
             </a>
+            <button class="innactive">Популярное</button>
+            <img class="star" src="img/star.png" alt="star">
             <p class="through"><?=$data["price"]?></p>
-            <p class="price"><?=$data["discount_price"]?></p>
-            <p class="new"><?=$discount?></p>
+            <p class="price"><?=$data["discount_price"].$discount?></p>
+            <!-- <p class="new"><?=$discount?></p> -->
             <p class="name"><?=$data["name"]?></p>
             <p class="colors"><?=$color?></p>
             <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->

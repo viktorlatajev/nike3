@@ -2308,3 +2308,10 @@ a>img.twitter {
     top: 64px;
     left: 1762px;
 }
+
+span {
+    padding-left: 175px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
