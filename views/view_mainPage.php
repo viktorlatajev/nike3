@@ -369,13 +369,13 @@
         <?php foreach ($arrayAll[1] as $data) {?>
           <div class="<?=$data["class"]?>">
             <a href="#news">
-              <img src="<?=$data["image_path"]?>" alt="k7">
+              <img class="<?=$data["image_class"]?>" src="<?=$data["image_path"]?>">
             </a>
             <p class="date"><?=$data["news_date"]?></p>
             <h1><?=$data["name"]?></h1>
             <p class="text"><?=$data["text"]?></p>
-            <a href="#news"><img class="arrow1" src="img/arrow.png" alt="arrow"></a>
-            <a class="arrow1" href="#news">Узнать больше</a>
+            <a href="#news"><img class="<?=$data["arrow_class"]?>" src="img/arrow.png" alt="arrow"></a>
+            <a class="<?=$data["more"]?>" href="#news">Узнать больше</a>
           </div>
         <?php } ?>
           
@@ -398,8 +398,7 @@
 
         <div class="clothes">
           <a href="#news">
-            <img class="man" src="img/man.jpg" alt="man">
-            <img class="woman" src="img/woman.jpg" alt="woman">
+            <img src="img/man_woman.png" alt="man_woman">
           </a>
           <p class="date">18.04.2023</p>
           <h1>Новая линия одежды Nike</h1>

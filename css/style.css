@@ -1418,21 +1418,15 @@ h1.news {
     top: 4820px;
 }
 
-.clothes>a>img.man{
+.man_woman{
     position: absolute;
-    width: 261px;
+    width: 532px;
     height: 375px;
     left: 1249px;
     top: 4820px;
 }
 
-.clothes>a>img.woman{
-    position: absolute;
-    width: 261px;
-    height: 375px;
-    left: 1520px;
-    top: 4820px;
-}
+
 
 .k7>p.date {
     position: absolute;
