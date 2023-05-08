@@ -7,4 +7,8 @@ $view = new CView();
 $controller = new CController();
 
 $pageBody = $view->ViewMainPage();
+$pageFooter = $view->GetFooter();
+
+
+include($pageFooter);
 
