@@ -10,6 +10,14 @@ class CView {
         return $arrayAll;
     }
 
+    public function ViewAirForce(){
+        $controller = new CController();
+        $arrayAll = $controller->SetAirForce();
+        include 'views/view_airforce.php';
+        return $arrayAll;
+    }
+
+
     public function GetFooter(){
         return 'views/footer.php';
     }

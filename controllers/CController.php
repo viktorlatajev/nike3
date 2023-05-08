@@ -20,4 +20,16 @@ class CController {
         
         return $resultAll;
     }
+
+    public function SetAirForce () {
+        $model = new CModel();
+        $resultModel = $model->GetData();
+        
+
+        $resultAll = [];
+        $resultAll[0] = $resultModel;
+        
+        
+        return $resultAll;
+    }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIKE</title>
-    <link rel="icon" href="/img/logo1.ico" type="images/x-icon">
+    <link rel="icon" href="img/logo1.ico" type="images/x-icon">
     <!--SLIDER-->
     <link rel="stylesheet" href="simple-adaptive-slider.css">
     <script defer src="simple-adaptive-slider.js"></script>
@@ -31,7 +31,7 @@
           <div class="circle"></div>
 
           
-          <a class="navbar-brand" href="index2.html">
+          <a class="navbar-brand" href="index.php">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
             <nav class="navbar navbar-expand-lg">
@@ -222,7 +222,7 @@
 
           <?php if ($data["class"] == "rectangle4") {
               // echo 'yes';
-              $link = 'airforce.html';
+              $link = 'airforce.php';
           
         } else {
           // echo 'no';
