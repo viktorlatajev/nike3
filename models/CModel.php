@@ -3,21 +3,21 @@
 class Cmodel {
     public function GetData(){
 
-        $mysqli = new mysqli('localhost', 'root', '', 'nike');
+        // $mysqli = new mysqli('localhost', 'root', '', 'nike');
 
-        if(mysqli_connect_errno()) {
-            print_f('Соедение не установлено');
-            exit();
-        }
+        // if(mysqli_connect_errno()) {
+        //     print_f('Соедение не установлено');
+        //     exit();
+        // }
 
-        $mysqli->set_charset('utf8');
+        // $mysqli->set_charset('utf8');
 
-        $query = "Select * From goods";
+        // $query = "Select * From goods";
 
 
-        $result = $mysqli->query($query);
+        // $result = $mysqli->query($query);
 
-        $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
+        // $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
 
 
         $host = '127.0.0.1';
@@ -60,21 +60,21 @@ class Cmodel {
     }
     public function GetDataNews(){
 
-        $mysqli = new mysqli('localhost', 'root', '', 'nike');
+        // $mysqli = new mysqli('localhost', 'root', '', 'nike');
 
-        if(mysqli_connect_errno()) {
-            print_f('Соедение не установлено');
-            exit();
-        }
+        // if(mysqli_connect_errno()) {
+        //     print_f('Соедение не установлено');
+        //     exit();
+        // }
 
-        $mysqli->set_charset('utf8');
+        // $mysqli->set_charset('utf8');
 
-        $query = "Select * From news";
+        // $query = "Select * From news ORDER BY news_date DESC LIMIT 3";
 
 
-        $result = $mysqli->query($query);
+        // $result = $mysqli->query($query);
 
-        $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
+        // $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
 
 
         $host = '127.0.0.1';
@@ -91,7 +91,7 @@ class Cmodel {
         ];
         $pdo = new PDO($dsn, $user, $pass, $opt);
          
-        $result = $pdo->query('SELECT * FROM news');
+        $result = $pdo->query('SELECT * FROM news ORDER BY news_date DESC LIMIT 3');
 
         $arrayResult = $result->fetchAll();
 
@@ -118,21 +118,21 @@ class Cmodel {
 
     public function GetDataCollections(){
 
-        $mysqli = new mysqli('localhost', 'root', '', 'nike');
+        // $mysqli = new mysqli('localhost', 'root', '', 'nike');
 
-        if(mysqli_connect_errno()) {
-            print_f('Соедение не установлено');
-            exit();
-        }
+        // if(mysqli_connect_errno()) {
+        //     print_f('Соедение не установлено');
+        //     exit();
+        // }
 
-        $mysqli->set_charset('utf8');
+        // $mysqli->set_charset('utf8');
 
-        $query = "Select * From collections";
+        // $query = "Select * From collections";
 
 
-        $result = $mysqli->query($query);
+        // $result = $mysqli->query($query);
 
-        $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
+        // $arrayResult = $result->fetch_all(MYSQLI_ASSOC);
 
 
         $host = '127.0.0.1';

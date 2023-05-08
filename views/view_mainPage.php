@@ -352,20 +352,34 @@
            $color = "";
           }?>
 
-          <?php if ($data["class"] == "rectangle6") {
+          <?php if ($data["popular"] == "1") {
               // echo 'yes';
-              $button = 'Доступно +3 цвета';
+              // $popular = '<button class="innactive">Популярное</button>';
+              $popularOn = true;
           
           } else {
             // echo 'no';
-           $color = "";
+           $popularOn = false;
+          }?>
+
+          <?php if ($data["star"] == "1") {
+              // echo 'yes';
+              $star = 'img/star.png';
+          
+          } else {
+            // echo 'no';
+           $star = "";
           }?>
           <div class="<?=$data["class"]?>">
             <a href="#collection">
               <img src="<?=$data["image_path"]?>" alt="acg_tshirt">
             </a>
-            <button class="innactive">Популярное</button>
-            <img class="star" src="img/star.png" alt="star">
+            <?php if ($popularOn) {
+              <button class="innactive">Популярное</button>
+            }
+            ?>
+            
+            <img class="star" src="<?=$star?>" alt="star">
             <p class="through"><?=$data["price"]?></p>
             <p class="price"><?=$data["discount_price"].$discount?></p>
             <!-- <p class="new"><?=$discount?></p> -->
