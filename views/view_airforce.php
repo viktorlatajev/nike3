@@ -113,8 +113,44 @@
 
     <div class="new">
       <h1 class="new">Тебе может понравиться</h1>
+
+
+      <?php foreach ($arrayAll[3] as $data) {?>
+
+        <?php if ($data["discount"] == "1") {
+            // echo 'yes';
+            $discount = '<span class="skidka">СКИДКА</span>';
+
+        } else {
+          // echo 'no';
+        $discount = "";
+        }?>
+
+        <?php if ($data["new"] == "1") {
+          $new = '<span>НОВИНКА</span>';
+        } else {
+          $new = "";
+        }?>
+
+
+        
+        <div class="<?=$data["class"]?>">
+          <a href="#collection">
+            <img src="<?=$data["image_path"]?>" alt="lebron">
+          </a>
+          
+          <p class="new"><?=$new?></p>
+          
+          <p class="through"><?=$data["price"]?></p>
+          <p class="price"><?=$data["discount_price"].$discount?></p>
+          <!-- <p class="new"><?=$discount?></p> -->
+          <p class="name"><?=$data["name"]?></p>
+          <p class="colors"><?=$data["colors"]?></p>
+          <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
+        </div>
+      <?php } ?>
       
-      <div class="rectangle1">
+      <!-- <div class="rectangle1">
         <a href="#">
           <img src="img/lebron.jpg" alt="lebron">
         </a>
@@ -155,7 +191,7 @@
         <p>165 €</p>
         <p class="name">NIKE AIR MAX 97</p>
         <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-      </div>
+      </div> -->
 
     </div>
   </section>

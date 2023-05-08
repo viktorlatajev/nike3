@@ -838,7 +838,7 @@ h1.new {
     color: #000000;
 }
 
-.rectangle2>p {
+.rectangle2>p.through {
     position: absolute;
     width: 371px;
     height: 146px;
@@ -855,6 +855,8 @@ h1.new {
     display: flex;
     align-items: center;
     text-align: center;
+
+    text-decoration: line-through;
     
     color: #000000;
 }
@@ -1156,6 +1158,8 @@ h1.new {
     display: flex;
     align-items: center;
     text-align: center;
+
+    letter-spacing: 0.055em;
     
     color: #FF3A4C;
 }
@@ -1558,4 +1562,11 @@ a>img.twitter {
     height: 28px;
     top: 64px;
     left: 1762px;
+}
+
+span.skidka {
+    padding-left: 150px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
 }

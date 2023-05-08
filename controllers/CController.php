@@ -12,6 +12,7 @@ class CController {
         $resultModel = $model->GetData();
         $resultNews = $model->GetDataNews();
         $resultCollections = $model->GetDataCollections();
+        
 
         $resultAll = [];
         $resultAll[0] = $resultModel;
@@ -24,10 +25,13 @@ class CController {
     public function SetAirForce () {
         $model = new CModel();
         $resultModel = $model->GetData();
+        $resultLikes = $model->GetDataLikes();
         
 
         $resultAll = [];
         $resultAll[0] = $resultModel;
+        $resultAll[3] = $resultLikes;
+        
         
         
         return $resultAll;

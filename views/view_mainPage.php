@@ -478,11 +478,13 @@
         <p>Подпишись на рассылку, чтобы получать новости
           и предложения от семейства брендов Nike.</p>
 
-        <p class="name">Ваше имя</p>
-        <input class="name" type="text">
-        <p class="email">Ваше E-mail</p>
-        <input class="email" type="text">
-
+        
+        <form action="mail_script.php" method="post">
+          <p class="name">Ваше имя</p>
+          <input class="name" type="text" name="name">
+          <p class="email">Ваше E-mail</p>
+          <input class="email" type="email" name="e-mail">
+        </form>
         <button>Подписаться</button>
         <p class="policy">Оформляя подписку ты принимаешь <a href="#mailing">Политику конфиденциальности</a>
           и <a href="#mailing">Условия использования</a> Nike</p>
