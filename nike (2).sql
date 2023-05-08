@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 08 2023 г., 09:12
+-- Время создания: Май 08 2023 г., 14:14
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -90,8 +90,21 @@ CREATE TABLE `likes` (
   `description` text NOT NULL,
   `price` varchar(255) NOT NULL,
   `colors` varchar(255) NOT NULL,
-  `class` varchar(255) NOT NULL
+  `class` varchar(255) NOT NULL,
+  `discount` tinyint(1) NOT NULL,
+  `discount_price` varchar(255) NOT NULL,
+  `new` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `likes`
+--
+
+INSERT INTO `likes` (`id`, `name`, `image_path`, `description`, `price`, `colors`, `class`, `discount`, `discount_price`, `new`) VALUES
+(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156 €', 'Доступно +1 цвет', 'rectangle1', 0, '', 1),
+(2, 'NIKE AIR MAX ZM950', 'img/zm950.jpg', '', '165 €', 'Доступно +1 цвет', 'rectangle2', 1, '116 €', 0),
+(3, 'NIKE AIR MAX 270', 'img/air270.jpg', '', '148 €', 'Доступно +5 цветов', 'rectangle3', 0, '', 0),
+(4, 'NIKE AIR MAX 97', 'img/airmax97.jpg', '', '165 €', '', 'rectangle4', 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -116,11 +129,9 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `name`, `news_date`, `text`, `image_path`, `class`, `image_class`, `arrow_class`, `more`) VALUES
-(1, 'Что нового в Kyrie 7', '2023-04-10', 'Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах', 'img/k7.jpg', 'k7', 'k7', 'arrow1', 'arrow1'),
+(1, 'Что нового в Kyrie 7', '2023-04-10', '26 марта 2023г. - Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах', 'img/k7.jpg', 'k7', 'k7', 'arrow1', 'arrow1'),
 (2, 'Вы не можете остановить нас', '2023-04-18', 'Серия “Вы не можете остановить нас” от Nike\r\nпразднует возвращение в наши спортивные сооружения после беспрецедентного сезона ограничений.', 'img/ycss.jpg', 'ycss', 'ycss', 'arrow2', 'arrow2'),
-(3, 'Новая линия одежды Nike', '2023-04-25', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3'),
-(4, 'Поавлдповдалдиав авджплва ', '2023-05-07', 'аиарволтмалдв продлавр пдлоаврп длоаврповарпдвр пдав', '', 'k7', '', 'arrow1', 'arrow1'),
-(5, 'jfkdls jdsk', '2023-05-08', 'gjkfldsgflk fshh fjkds hfdsjkf hdslkhfdsl kfhdsj ', '', 'ycss', '', 'arrow2', 'arrow2');
+(3, 'Новая линия одежды Nike', '2023-04-25', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3');
 
 --
 -- Индексы сохранённых таблиц
@@ -170,7 +181,7 @@ ALTER TABLE `goods`
 -- AUTO_INCREMENT для таблицы `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `news`
