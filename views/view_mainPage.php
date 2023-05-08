@@ -375,11 +375,12 @@
               <img src="<?=$data["image_path"]?>" alt="acg_tshirt">
             </a>
             <?php if ($popularOn) {
-              <button class="innactive">Популярное</button>
+              echo '<button class="innactive">Популярное</button>';
+              echo '<img class="star" src="img/star.png" alt="star">';
             }
             ?>
             
-            <img class="star" src="<?=$star?>" alt="star">
+            
             <p class="through"><?=$data["price"]?></p>
             <p class="price"><?=$data["discount_price"].$discount?></p>
             <!-- <p class="new"><?=$discount?></p> -->
@@ -489,7 +490,7 @@
 
     </section>
 
-    <section id="footer">
+    <!-- <section id="footer">
 
       <div class="footer">
         <h1 class="one">ПОМОЩЬ И ИНФОРМАЦИЯ</h1>
@@ -529,4 +530,4 @@
     
     
 </body>
-</html>
+</html> -->

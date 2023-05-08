@@ -10,4 +10,8 @@ class CView {
         return $arrayAll;
     }
 
+    public function GetFooter(){
+        return 'views/footer.php';
+    }
+
 }
