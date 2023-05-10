@@ -36,4 +36,8 @@ class CController {
         
         return $resultAll;
     }
+
+    public function error404 () {
+        echo 'This page not found!';
+    }
 }
