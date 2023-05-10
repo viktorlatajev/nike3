@@ -89,7 +89,7 @@
 
         <div class="carousel-item" data-bs-interval="5000" style="background-color: #FF3A4C;">
           <div class="circle1"></div>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
             <nav class="navbar navbar-expand-lg">
@@ -146,7 +146,7 @@
 
         <div class="carousel-item" data-bs-interval="5000" style="background-color: #FCC026;">
           <div class="circle2"></div>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
             <nav class="navbar navbar-expand-lg">

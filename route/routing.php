@@ -13,7 +13,7 @@
         CController::SetMainPage();
     }
     else{
-        echo 'error';
+        
         CController::error404();
 
     }

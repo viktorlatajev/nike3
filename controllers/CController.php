@@ -38,6 +38,6 @@ class CController {
     }
 
     public function error404 () {
-        echo 'This page not found!';
+        include_once 'views/view_error404.php';
     }
 }
