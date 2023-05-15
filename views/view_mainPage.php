@@ -58,7 +58,7 @@
                         <a class="nav-link" href="#">Распродажи</a>
                       </li>
                       <li class="nav-item6">
-                        <a class="nav-link" href="#">Коллекции</a>
+                        <a class="nav-link" href="#collection">Коллекции</a>
                       </li>
                     </ul>
                   </div>

@@ -18,34 +18,39 @@ a.navbar-brand>img {
 
 h1.err404 {
     position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 870px;
-    top: 130px;
-
-    font-style: bold;
+    width: 158px;
+    height: 100px;
+    left: 873px;
+    top: 165px;
+    
+    /* bold404 */
+    
+    font-family: 'GT Pressura Pro Trial';
+    font-style: normal;
     font-weight: 700;
     font-size: 100px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 110px;
+    
+    color: #000000;
 }
 
 p.oops {
     position: absolute;
-    width: 800px;
-    height: 200px;
-    left: 720px;
-    top: 200px;
-
+    width: 508px;
+    height: 29px;
+    left: 698px;
+    top: 265px;
+    
+    /* oops */
+    
+    font-family: 'GT Pressura Pro Trial';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    
+    color: #000000;
 }
 
 #footer{

@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item1">
-            <a class="nav-link smooth-scroll" aria-current="page" href="#">Новинки</a>
+            <a class="nav-link smooth-scroll" aria-current="page" href="index.php#new">Новинки</a>
           </li>
           <li class="nav-item2">
             <a class="nav-link" href="#">Мужчины</a>
@@ -43,7 +43,7 @@
             <a class="nav-link" href="#">Распродажи</a>
           </li>
           <li class="nav-item6">
-            <a class="nav-link" href="#">Коллекции</a>
+            <a class="nav-link" href="index.php#collection">Коллекции</a>
           </li>
         </ul>
       </div>
