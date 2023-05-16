@@ -116,7 +116,7 @@
                         <a class="nav-link" href="#">Распродажи</a>
                       </li>
                       <li class="nav-item6">
-                        <a class="nav-link" href="#">Коллекции</a>
+                        <a class="nav-link" href="#collection">Коллекции</a>
                       </li>
                     </ul>
                   </div>
@@ -173,7 +173,7 @@
                         <a class="nav-link" href="#">Распродажи</a>
                       </li>
                       <li class="nav-item6">
-                        <a class="nav-link" href="#">Коллекции</a>
+                        <a class="nav-link" href="#collection">Коллекции</a>
                       </li>
                     </ul>
                   </div>
@@ -233,10 +233,10 @@
           <a href=<?=$link ?>>
             <img src="<?=$data["image_path"]?>" alt="lebron">
           </a>
-          <p><?=$data["price"]?></p>
+          <p><?=$data["price"]?>€</p>
           <p class="new">НОВИНКА</p>
           <p class="name"><?=$data["name"]?></p>
-          <p class="colors"><?=$data["colors"]?></p>
+          <p class="colors"><?=$data["color_choice"]?></p>
           <!-- <img class="pink_heart" src="img/border_heart.png" alt="pink_heart"> -->
         </div>
         <?php } ?>

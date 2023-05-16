@@ -50,7 +50,9 @@ class Cmodel {
     public function GetData(){
 
          
-        $result = $this->pdo->query('SELECT * FROM goods');
+        $result = $this->pdo->query('SELECT goods.id, name, image_path, description, price, class, color_choice FROM goods
+        LEFT JOIN colors_available
+        ON goods.colors = colors_available.id; ');
 
         $arrayResult = $result->fetchAll();
 

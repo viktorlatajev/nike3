@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 08 2023 г., 14:14
+-- Время создания: Май 16 2023 г., 08:35
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -54,6 +54,29 @@ INSERT INTO `collections` (`id`, `name`, `image_path`, `description`, `price`, `
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `colors_available`
+--
+
+CREATE TABLE `colors_available` (
+  `id` int(11) NOT NULL,
+  `color_choice` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `colors_available`
+--
+
+INSERT INTO `colors_available` (`id`, `color_choice`) VALUES
+(1, 'Доступно +1 цвет'),
+(2, 'Доступно +2 цвета'),
+(3, 'Доступно +3 цвета'),
+(4, 'Доступно +4 цвета'),
+(5, 'Доступно +5 цветов'),
+(6, '');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `goods`
 --
 
@@ -64,7 +87,7 @@ CREATE TABLE `goods` (
   `description` text NOT NULL,
   `price` varchar(255) NOT NULL,
   `class` varchar(255) NOT NULL,
-  `colors` varchar(255) NOT NULL
+  `colors` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -72,10 +95,10 @@ CREATE TABLE `goods` (
 --
 
 INSERT INTO `goods` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`) VALUES
-(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156 €', 'rectangle1', 'Доступно +1 цвет'),
-(2, 'NIKE AIR VAPORMAX EVO', 'img/vapormax_evo1.jpg', '', '220 €', 'rectangle2', 'Доступно +1 цвет'),
-(3, 'NIKE FREE METCON 3', 'img/metcon2.jpg', '', '110 €', 'rectangle3', ''),
-(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/airforce/air_force.jpg', '', '204 €', 'rectangle4', 'Доступно +5 цветов');
+(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156', 'rectangle1', 1),
+(2, 'NIKE AIR VAPORMAX EVO', 'img/vapormax_evo1.jpg', '', '220', 'rectangle2', 1),
+(3, 'NIKE FREE METCON 3', 'img/metcon2.jpg', '', '110', 'rectangle3', 6),
+(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/airforce/air_force.jpg', '', '204', 'rectangle4', 5);
 
 -- --------------------------------------------------------
 
@@ -144,10 +167,17 @@ ALTER TABLE `collections`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `colors_available`
+--
+ALTER TABLE `colors_available`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `goods`
 --
 ALTER TABLE `goods`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `colors` (`colors`);
 
 --
 -- Индексы таблицы `likes`
@@ -172,10 +202,16 @@ ALTER TABLE `collections`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT для таблицы `colors_available`
+--
+ALTER TABLE `colors_available`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT для таблицы `goods`
 --
 ALTER TABLE `goods`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `likes`
@@ -188,6 +224,16 @@ ALTER TABLE `likes`
 --
 ALTER TABLE `news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `goods`
+--
+ALTER TABLE `goods`
+  ADD CONSTRAINT `v1` FOREIGN KEY (`colors`) REFERENCES `colors_available` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
