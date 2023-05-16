@@ -10,7 +10,7 @@
 		{
 ?>
 	<div class="alert alert-info">
-		<strong>Запись добавлена. </strong><a href="newsAdmin"> Список товаров</a>
+		<strong>Запись добавлена. </strong><a href="goodsAdmin"> Список товаров</a>
 	</div>
 	<?php
 		}
@@ -18,14 +18,14 @@
     {
      ?>
 		<div class="alert alert-warning">
-			<strong>Ошибка добавления записи!</strong> <a href="newsAdmin"> Список товаров</a>
+			<strong>Ошибка добавления записи!</strong> <a href="goodsAdmin"> Список товаров</a>
 		</div>
      <?php
         }	
  }
  else{
 	?>
-  <form method='POST' action="newsAddResult" enctype="multipart/form-data">
+  <form method='POST' action="goodsAddResult" enctype="multipart/form-data">
     <table class='table table-bordered'>
         <tr>
             <td>Name</td>
@@ -61,7 +61,7 @@
                 <button type="submit" class="btn btn-primary" name="save">
                     <span class="glyphicon glyphicon-plus"></span> Добавить
                 </button>  
-                <a href="newsAdmin" class="btn btn-large btn-success">
+                <a href="goodsAdmin" class="btn btn-large btn-success">
                 <i class="glyphicon glyphicon-backward"></i> &nbsp;Назад к списку</a>
             </td>
         </tr>

@@ -17,28 +17,28 @@
 		$response=controllerAdmin::logoutAction();
 	}
 	
-		//------------------------------------listNews
-	elseif($path=='newsAdmin'){
-		$response=controllerAdminNews::NewsList();
+		//------------------------------------listGoods
+	elseif($path=='goodsAdmin'){
+		$response=controllerAdminGoods::GoodsList();
 		
 	}
-	//---------------add news
-		elseif($path=='newsAdd'){
-		$response=controllerAdminNews::newsAddForm();
+	//---------------add goods
+		elseif($path=='goodsAdd'){
+		$response=controllerAdminGoods::goodsAddForm();
 		
 	}
-	elseif($path == 'newsAddResult') {		
-	$response = controllerAdminNews::newsAddResult();	
+	elseif($path == 'goodsAddResult') {		
+	$response = controllerAdminGoods::goodsAddResult();	
 }
 
 
-	//---------------edit news
-		elseif($path=='newsEdit' && isset($_GET['id'])){
-		$response=controllerAdminNews::newsEditForm($_GET['id']);
+	//---------------edit goods
+		elseif($path=='goodsEdit' && isset($_GET['id'])){
+		$response=controllerAdminGoods::goodsEditForm($_GET['id']);
 		
 	}
-	elseif($path == 'newsEditResult' && isset($_GET['id'])) {		
-	$response = controllerAdminNews::newsEditResult($_GET['id']);	
+	elseif($path == 'goodsEditResult' && isset($_GET['id'])) {		
+	$response = controllerAdminGoods::goodsEditResult($_GET['id']);	
 }
 
 
@@ -46,47 +46,17 @@
 
 
 
-	//---------------delete news
-	elseif($path=='newsDel' && isset($_GET['id'])){
-		$response=controllerAdminNews::newsDeleteForm($_GET['id']);
+	//---------------delete goods
+	elseif($path=='goodsDel' && isset($_GET['id'])){
+		$response=controllerAdminGoods::goodsDeleteForm($_GET['id']);
 		
 	}
-	elseif($path == 'newsDelResult' && isset($_GET['id'])) {		
-		$response = controllerAdminNews::newsDeleteResult($_GET['id']);	
+	elseif($path == 'goodsDelResult' && isset($_GET['id'])) {		
+		$response = controllerAdminGoods::goodsDeleteResult($_GET['id']);	
 	}
 	
 	
-	//------------------------------------listCategory
-	elseif($path=='categoryAdmin'){
-		$response=controllerAdminCategory::CategoryList();
-		
-	}
 	
-	//---------------add category
-		elseif($path=='categoryAdd'){
-		$response=controllerAdminCategory::categoryAddForm();
-		
-	}
-	elseif($path == 'categoryAddResult') {		
-	$response = controllerAdminCategory::categoryAddResult();	
-}
-	//---------------edit category
-		elseif($path=='categoryEdit' && isset($_GET['id'])){
-		$response=controllerAdminCategory::categoryEditForm($_GET['id']);
-		
-	}
-	elseif($path == 'categoryEditResult' && isset($_GET['id'])) {		
-	$response = controllerAdminCategory::categoryEditResult($_GET['id']);	
-}
-	
-		//---------------delete news
-	elseif($path=='categoryDel' && isset($_GET['id'])){
-		$response=controllerAdminCategory::categoryDeleteForm($_GET['id']);
-		
-	}
-	elseif($path == 'categoryDelResult' && isset($_GET['id'])) {		
-		$response = controllerAdminCategory::categoryDeleteResult($_GET['id']);	
-	}
 	
 	
 	//-------------------profile

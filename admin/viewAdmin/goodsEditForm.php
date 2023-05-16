@@ -9,7 +9,7 @@
 		{
 ?>
 	<div class="alert alert-info">
-		<strong>Запись изменена. </strong><a href="newsAdmin"> Список товаров</a>
+		<strong>Запись изменена. </strong><a href="goodsAdmin"> Список товаров</a>
 	</div>
 	<?php
 		}
@@ -17,7 +17,7 @@
     {
      ?>
 		<div class="alert alert-warning">
-			<strong>Ошибка изменения записи!</strong> <a href="newsAdmin"> Список товаров</a>
+			<strong>Ошибка изменения записи!</strong> <a href="goodsAdmin"> Список товаров</a>
 		</div>
      <?php
         }	
@@ -25,17 +25,14 @@
  else{
 	?>
 	
-  <form method='POST' action="newsEditResult?id=<?php echo $id; ?>" enctype="multipart/form-data">
+  <form method='POST' action="goodsEditResult?id=<?php echo $id; ?>" enctype="multipart/form-data">
     <table class='table table-bordered'>
         <tr>
             <td>Name</td>
             <td><input type='text' name='name' class='form-control' required 
 			value="<?php  echo $detail['name'] ?>" ></td>
         </tr>
-        <!-- <tr>
-            <td>Description</td>
-            <td><textarea rows="5" name="text" class='form-control' required ><?php  echo $detail['description']; ?></textarea></td>
-        </tr> -->
+        
 		<tr>
             <td>Price</td>
             <td>
@@ -60,7 +57,7 @@
         <tr>
             <td>Old Image</td>
             <td><div>
-			<!--<img src="../images/<?php  //echo $detail['picture']; ?>" width=150>-->	
+			
 			<input type="text" name='image_path' class='form-control' required value=<?php echo $detail["image_path"]?>>          
             </div></td>
         </tr>
@@ -76,7 +73,7 @@
                 <button type="submit" class="btn btn-primary" name="save">
                     <span class="glyphicon glyphicon-plus"></span> Изменить
                 </button>  
-                <a href="newsAdmin" class="btn btn-large btn-success">
+                <a href="goodsAdmin" class="btn btn-large btn-success">
                 <i class="glyphicon glyphicon-backward"></i> &nbsp;Назад к списку</a>
             </td>
         </tr>

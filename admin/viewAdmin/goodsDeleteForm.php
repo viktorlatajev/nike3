@@ -9,7 +9,7 @@
 		{
 ?>
 	<div class="alert alert-info">
-		<strong>Запись удалена. </strong><a href="newsAdmin"> Список товаров</a>
+		<strong>Запись удалена. </strong><a href="goodsAdmin"> Список товаров</a>
 	</div>
 	<?php
 		}
@@ -17,14 +17,14 @@
     {
      ?>
 		<div class="alert alert-warning">
-			<strong>Ошибка удаления записи!</strong> <a href="newsAdmin"> Список товаров</a>
+			<strong>Ошибка удаления записи!</strong> <a href="goodsAdmin"> Список товаров</a>
 		</div>
      <?php
         }	
  }
  else{
 	?>
-  <form method='POST' action="newsDelResult?id=<?php echo $id; ?>" enctype="multipart/form-data">
+  <form method='POST' action="goodsDelResult?id=<?php echo $id; ?>" enctype="multipart/form-data">
     <table class='table table-bordered'>
         <tr>
             <td>Name</td>
@@ -56,7 +56,7 @@
                 <button type="submit" class="btn btn-primary" name="save">
                     <span class="glyphicon glyphicon-plus"></span> Удалить
                 </button>  
-                <a href="newsAdmin" class="btn btn-large btn-success">
+                <a href="goodsAdmin" class="btn btn-large btn-success">
                 <i class="glyphicon glyphicon-backward"></i> &nbsp;Назад к списку</a>
             </td>
         </tr>
