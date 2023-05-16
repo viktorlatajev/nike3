@@ -1,6 +1,6 @@
 <?php
 
-class Cmodel {
+class CModel {
 
     private $pdo;
     private $host;
@@ -59,6 +59,22 @@ class Cmodel {
          return $arrayResult;
 
     }
+
+    function getOne($query)
+    {
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $response = $stmt->fetch();
+        return $response;
+    }
+
+    function executeRun($query)
+    {
+        $response = $this->pdo->exec($query);
+        return $response;
+    }
+
     public function GetDataNews(){
 
 
