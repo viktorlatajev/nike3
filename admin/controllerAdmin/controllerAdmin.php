@@ -17,6 +17,7 @@ class controllerAdmin{
 		$logIn=modelAdmin::userAuth();
 		if($logIn){
 			include_once "viewAdmin/startAdmin.php";
+			
 		}else{
 			$_SESSION['errorString']='Неправильно e-mail или пароль';
 			include_once "viewAdmin/formLogin.php";
