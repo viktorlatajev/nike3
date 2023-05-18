@@ -52,7 +52,9 @@ class CModel {
          
         $result = $this->pdo->query('SELECT goods.id, name, image_path, description, price, class, color_choice FROM goods
         LEFT JOIN colors_available
-        ON goods.colors = colors_available.id; ');
+        ON goods.colors = colors_available.id 
+        ORDER BY goods.id DESC LIMIT 4 
+        ');
 
         $arrayResult = $result->fetchAll();
 

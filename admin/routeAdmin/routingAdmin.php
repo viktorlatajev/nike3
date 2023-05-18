@@ -11,6 +11,7 @@
 	
 	elseIf($path=='login'){
 		$response=controllerAdmin::loginAction();
+		// $response=controllerAdminGoods::GoodsList();
 	}
 	
 		elseIf($path=='logout'){

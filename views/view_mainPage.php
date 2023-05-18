@@ -31,7 +31,7 @@
           <div class="circle"></div>
 
           
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="index">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
             <nav class="navbar navbar-expand-lg">
@@ -481,7 +481,7 @@
         
         <form action="mail_script.php" method="post">
           <p class="name">Ваше имя</p>
-          <input class="name" type="text" name="name">
+          <input class="name" type="name" name="name">
           <p class="email">Ваше E-mail</p>
           <input class="email" type="email" name="e-mail">
         </form>

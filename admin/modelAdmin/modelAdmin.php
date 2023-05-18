@@ -15,7 +15,7 @@ $email=filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
 $password=$_POST['password'];//123456   из формы
 //sql query
 $sql='SELECT * FROM `users` WHERE `email`="'.$email.'"';
-$db=new Database();
+$db=new CModel();
 $item=$db->getOne($sql);
 	if($item){
 		//сравнить пароль
@@ -63,14 +63,14 @@ $item=$db->getOne($sql);
 			if( $new_password==$confirm_password && $new_password!=""){
 				
 				$sql='SELECT * FROM `users` WHERE `email` ="'.$_SESSION['email'].'"';
-				$db = new Database();
+				$db = new CModel();
 				$item = $db->getOne($sql);
 				if ( password_verify($current_password, $item['password'])){
 					
 					$passwordHash = password_hash($new_password, PASSWORD_DEFAULT);
 					
 					$sql="UPDATE `users` SET `password` = '$passwordHash', `pass` = '$new_password' WHERE `users`.`id` = ".$_SESSION['userId'];
-					$db = new Database();
+					$db = new Cmodel();
 					$item = $db->executeRun($sql);
 						if($item) 	$test=array(0=>true);
 						
