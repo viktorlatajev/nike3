@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 16 2023 г., 08:35
+-- Время создания: Май 18 2023 г., 10:11
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -97,8 +97,8 @@ CREATE TABLE `goods` (
 INSERT INTO `goods` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`) VALUES
 (1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156', 'rectangle1', 1),
 (2, 'NIKE AIR VAPORMAX EVO', 'img/vapormax_evo1.jpg', '', '220', 'rectangle2', 1),
-(3, 'NIKE FREE METCON 3', 'img/metcon2.jpg', '', '110', 'rectangle3', 6),
-(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/airforce/air_force.jpg', '', '204', 'rectangle4', 5);
+(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/airforce/air_force.jpg', '', '204', 'rectangle4', 5),
+(9, 'NIKE FREE METCON 3', 'img/metcon2.jpg', '', '110', 'rectangle3', 6);
 
 -- --------------------------------------------------------
 
@@ -156,6 +156,31 @@ INSERT INTO `news` (`id`, `name`, `news_date`, `text`, `image_path`, `class`, `i
 (2, 'Вы не можете остановить нас', '2023-04-18', 'Серия “Вы не можете остановить нас” от Nike\r\nпразднует возвращение в наши спортивные сооружения после беспрецедентного сезона ограничений.', 'img/ycss.jpg', 'ycss', 'ycss', 'arrow2', 'arrow2'),
 (3, 'Новая линия одежды Nike', '2023-04-25', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3');
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) COLLATE utf8_estonian_ci NOT NULL,
+  `job` varchar(100) COLLATE utf8_estonian_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8_estonian_ci NOT NULL,
+  `login` varchar(20) COLLATE utf8_estonian_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_estonian_ci NOT NULL,
+  `status` varchar(20) COLLATE utf8_estonian_ci NOT NULL,
+  `registration_date` date NOT NULL,
+  `pass` varchar(255) COLLATE utf8_estonian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_estonian_ci;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `job`, `email`, `login`, `password`, `status`, `registration_date`, `pass`) VALUES
+(1, 'admin', 'Portal admin', 'admin@nike.com', 'admin', '$2y$12$pxB2ofiiNZkxObmbBvBOyegwCjHCVFYhapjiSsdYXUaJ9Z1IH6pQW', 'admin', '2021-12-01', '12345');
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -192,6 +217,13 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -211,7 +243,7 @@ ALTER TABLE `colors_available`
 -- AUTO_INCREMENT для таблицы `goods`
 --
 ALTER TABLE `goods`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `likes`
@@ -223,6 +255,12 @@ ALTER TABLE `likes`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT для таблицы `users`
+--
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
