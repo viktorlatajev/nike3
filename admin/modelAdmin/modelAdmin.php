@@ -14,7 +14,7 @@ if(isset($_POST['email']) && isset($_POST['password']) && $_POST['email'] !="" &
 $email=filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
 $password=$_POST['password'];//123456   из формы
 //sql query
-$sql='SELECT * FROM `users` WHERE `email`="'.$email.'"';
+$sql='SELECT * FROM users WHERE email="'.$email.'"';
 $db=new CModel();
 $item=$db->getOne($sql);
 	if($item){

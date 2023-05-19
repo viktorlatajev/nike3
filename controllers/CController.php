@@ -7,7 +7,7 @@ class CController {
     public $model;
     public $view;
 
-    public function SetMainPage () {
+    public static function SetMainPage () {
         $model = new CModel();
         $resultModel = $model->GetData();
         $resultNews = $model->GetDataNews();
@@ -37,7 +37,7 @@ class CController {
         return $resultAll;
     }
 
-    public function error404 () {
+    public static function error404 () {
         include_once 'views/view_error404.php';
     }
 }

@@ -385,6 +385,7 @@ p.razmer39 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -421,6 +422,7 @@ p.razmer405 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -457,6 +459,7 @@ p.razmer41 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -495,6 +498,7 @@ p.razmer415 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -531,6 +535,7 @@ p.razmer42 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -567,6 +572,7 @@ p.razmer425 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -603,6 +609,7 @@ p.razmer43 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -639,6 +646,7 @@ p.razmer435 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    user-select: none;
     
     /* Color */
     
@@ -1569,4 +1577,9 @@ span.skidka {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
+}
+
+.razmer_border {
+    border: 2px solid black;
+    border-radius: 4px;
 }
