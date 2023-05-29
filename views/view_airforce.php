@@ -114,7 +114,6 @@
     <div class="new">
       <h1 class="new">Тебе может понравиться</h1>
 
-
       <?php foreach ($arrayAll[3] as $data) {?>
 
         <?php if ($data["discount"] == "1") {
@@ -132,8 +131,6 @@
           $new = "";
         }?>
 
-
-        
         <div class="<?=$data["class"]?>">
           <a href="#collection">
             <img src="<?=$data["image_path"]?>" alt="lebron">
@@ -143,92 +140,13 @@
           
           <p class="through"><?=$data["price"]?></p>
           <p class="price"><?=$data["discount_price"].$discount?></p>
-          <!-- <p class="new"><?=$discount?></p> -->
+          <?=$discount?>
           <p class="name"><?=$data["name"]?></p>
           <p class="colors"><?=$data["colors"]?></p>
           <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
         </div>
       <?php } ?>
-      
-      <!-- <div class="rectangle1">
-        <a href="#">
-          <img src="img/lebron.jpg" alt="lebron">
-        </a>
-        <p>156 €</p>
-        <p class="new">НОВИНКА</p>
-        <p class="name">LEBRON 18 LOW “NEON LIGHTS”</p>
-        <p class="colors">Доступно +1 цвет</p>
-        <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-      </div>
-
-      <div class="rectangle2">
-        <a href="#">
-          <img src="img/zm950.jpg" alt="zm950">
-        </a>
-        <p><s>165 €</s></p>
-          <p class="price">116 €</p>
-          <p class="skidka">СКИДКА</p>
-        
-        <p class="name">NIKE AIR MAX ZM950</p>
-        <p class="colors">Доступно +1 цвет</p>
-        <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-      </div>
-
-      <div class="rectangle3">
-        <a href="#">
-          <img src="img/air270.jpg" alt="air270">
-        </a>
-        <p>148 €</p>
-        <p class="name">NIKE AIR MAX 270</p>
-        <p class="colors">Доступно +5 цветов</p>
-        <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-      </div>
-
-      <div class="rectangle4">
-        <a href="#">
-          <img src="img/airmax97.jpg" alt="airmax97">
-        </a>
-        <p>165 €</p>
-        <p class="name">NIKE AIR MAX 97</p>
-        <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-      </div> -->
-
     </div>
   </section>
 
-  <!-- <section id="footer">
-
-    <div class="footer">
-      <h1 class="one">ПОМОЩЬ И ИНФОРМАЦИЯ</h1>
-      <a class="help" href="#footer">Помощь</a>
-      <a class="otsleditj" href="#footer">Отследить заказ</a>
-      <a class="dostavka" href="#footer">Доставка и возврат</a>
-      <a class="oplata" href="#footer">Способы оплаты</a>
-      <a class="svjazj" href="#footer">Связаться с нами</a>
-
-      <h1 class="two">О NIKE</h1>
-      <a class="news" href="#footer">Новости</a>
-      <a class="vakansii" href="#footer">Вакансии</a>
-      <a class="investors" href="#footer">Инвесторам</a>
-      <a class="policies" href="#footer">Политика</a>
-
-      <h1 class="three">ПОКУПАТЕЛЯМ</h1>
-      <a class="shops" href="#footer">Ближайшие магазины</a>
-      <a class="sub" href="#footer">Подписаться на рассылку</a>
-      <a class="gifts" href="#footer">Подарочные сертификаты</a>
-
-      <img class="copyright" src="img/copyright.png" alt="copyright">
-      <p class="copyright">Nike, Inc.,2023 Все права защищены</p>
-      <img src="img/gps.png" alt="gps" class="gps">
-      <p class="gps">Эстония</p>
-      <a href="#footer"><img class="fb" src="img/facebook.png" alt="facebook"></a>
-      <a href="#footer"><img class="instagram" src="img/inst.png" alt="inst"></a>
-      <a href="#footer"><img class="twitter" src="img/twitter.png" alt="twitter"></a>
-
-    </div>
-    
-
-  </section> -->
   <script src="scripts.js"></script>
-<!-- </body>
-</html> -->

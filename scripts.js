@@ -12,6 +12,11 @@ var elements1 = document.getElementsByClassName('br_verh')[0];
 var elements2 = document.getElementsByClassName('br_niz')[0];
 
 let btn1 = document.getElementsByClassName('razmer39')[0];
+let btn2 = document.getElementsByClassName('razmer405')[0];
+let btn3 = document.getElementsByClassName('razmer41')[0];
+let btn5 = document.getElementsByClassName('razmer42')[0];
+let btn6 = document.getElementsByClassName('razmer425')[0];
+let btn7 = document.getElementsByClassName('razmer435')[0];
 
 
 btn1.addEventListener('click', function (){
@@ -19,15 +24,11 @@ btn1.addEventListener('click', function (){
   btn1.classList.toggle("razmer_border");
 })
 
-let btn2 = document.getElementsByClassName('razmer405')[0];
-
 
 btn2.addEventListener('click', function (){
   console.log(btn2);
   btn2.classList.toggle("razmer_border");
 })
-
-let btn3 = document.getElementsByClassName('razmer41')[0];
 
 
 btn3.addEventListener('click', function (){
@@ -35,31 +36,17 @@ btn3.addEventListener('click', function (){
   btn3.classList.toggle("razmer_border");
 })
 
-// let btn4 = document.getElementsByClassName('razmer415')[0];
-
-
-// btn4.addEventListener('click', function (){
-//   console.log(btn4);
-//   btn4.classList.toggle("razmer_border");
-// })
-
-let btn5 = document.getElementsByClassName('razmer42')[0];
-
 
 btn5.addEventListener('click', function (){
   console.log(btn5);
   btn5.classList.toggle("razmer_border");
 })
 
-let btn6 = document.getElementsByClassName('razmer425')[0];
-
 
 btn6.addEventListener('click', function (){
   console.log(btn6);
   btn6.classList.toggle("razmer_border");
 })
-
-let btn7 = document.getElementsByClassName('razmer435')[0];
 
 
 btn7.addEventListener('click', function (){

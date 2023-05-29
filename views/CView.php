@@ -17,14 +17,6 @@ class CView {
         return $arrayAll;
     }
 
-    // public function ViewError404(){
-    //     $controller = new CController();
-    //     $arrayAll = $controller->SetError404();
-    //     include 'views/view_error404.php';
-    //     return $arrayAll;
-    // }
-
-
     public function GetFooter(){
         return 'views/footer.php';
     }

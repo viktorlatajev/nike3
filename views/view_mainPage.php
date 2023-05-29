@@ -213,10 +213,6 @@
         <h1 class="new">Новинки</h1>
         <p class="new">Смотреть все новинки</p>
 
-
-        
-      
-
         <?php foreach ($arrayAll[0] as $data) {?>
 
 
@@ -240,37 +236,6 @@
           <!-- <img class="pink_heart" src="img/border_heart.png" alt="pink_heart"> -->
         </div>
         <?php } ?>
-        
-<!--        <div class="rectangle2">
-          <a href="#new">
-            <img src="img/vapormax_evo1.jpg" alt="vapormax_evo">
-          </a>
-          <p>220 €</p>
-          <p class="new">НОВИНКА</p>
-          <p class="name">NIKE AIR VAPORMAX EVO</p>
-          <p class="colors">Доступно +1 цвет</p>
-          <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-        </div>
-        <div class="rectangle3">
-          <a href="#new">
-            <img src="img/metcon2.jpg" alt="metcon">
-          </a>
-          <p>110 €</p>
-          <p class="new">НОВИНКА</p>
-          <p class="name">NIKE FREE METCON 3</p>
-          <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-        </div>
-        
-            <div class="rectangle4">
-            <a href="airforce.html">
-                <img src="" alt="air_force">
-            </a>
-            <p>204 €</p>
-            <p class="new">НОВИНКА</p>
-            <p class="name">NIKE AIR FORCE 1 LOW CR7 BY YOU</p>
-            <p class="colors">Доступно +5 цветов</p>
-            <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-            </div> -->
         
       </div>
       
@@ -308,30 +273,6 @@
         <button>Посмотреть коллекцию</button>
         <img src="img/acg.jpg" alt="acg">
         
-        <!-- <div class="rectangle5">
-          <a href="#collection">
-            <img src="img/horseman.jpg" alt="horseman">
-          </a>
-          <p>156 €</p>
-          
-          <p class="name">NIKE ACG “4TH HORSEMAN”</p>
-
-          <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-        </div>
-        <div class="rectangle6">
-          
-          <a href="#collection">
-            <img src="img/nasu.jpg" alt="nasu">
-          </a>
-          
-          <button class="innactive">Популярное</button>
-          <img class="star" src="img/star.png" alt="star">
-          <p>127 €</p>
-          
-          <p class="name">NIKE ACG AIR NASU GORE-TEX</p>
-          
-          <img class="border_heart" src="img/border_heart.png" alt="border_heart">
-        </div> -->
         <?php foreach ($arrayAll[2] as $data) {?>
 
           <?php if ($data["discount"] == "1") {
@@ -354,7 +295,7 @@
 
           <?php if ($data["popular"] == "1") {
               // echo 'yes';
-              // $popular = '<button class="innactive">Популярное</button>';
+
               $popularOn = true;
           
           } else {
@@ -383,22 +324,12 @@
             
             <p class="through"><?=$data["price"]?></p>
             <p class="price"><?=$data["discount_price"].$discount?></p>
-            <!-- <p class="new"><?=$discount?></p> -->
+            <?=$discount?>
             <p class="name"><?=$data["name"]?></p>
             <p class="colors"><?=$color?></p>
             <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
         </div>
         <?php } ?>
-        <!-- <div class="rectangle8">
-          <a href="#collection">
-            <img src="img/react.jpg" alt="react">
-          </a>
-          <p>134 €</p>
-          <p class="new">НОВИНКА</p>
-          <p class="name">NIKE ACG REACT TERRA GOBE</p>
-          <p class="colors">Доступно +3 цвета</p>
-          <img class="pink_heart" src="img/pink_heart.png" alt="pink_heart">
-        </div> -->
 
       </div>
       
@@ -412,7 +343,6 @@
 
         <p class="all">Смотреть все новости</p>
         
-
         <?php foreach ($arrayAll[1] as $data) {?>
           
 
@@ -427,42 +357,9 @@
             <a class="<?=$data["more"]?>" href="#news">Узнать больше</a>
           </div>
         <?php } ?>
-          
-        
-        
-
-        <!-- <div class="ycss"> 
-          <a href="#news">
-            <img src="img/ycss.jpg" alt="ycss">
-          </a>
-          <p class="date">25.04.2023</p>
-          <h1>Вы не можете остановить нас</h1>
-          <p class="text">Серия “Вы не можете остановить нас” от Nike
-            празднует возвращение в наши спортивные 
-            сооружения после беспрецедентного сезона
-            ограничений.</p>
-          <a href="#news"><img class="arrow2" src="img/arrow.png" alt="arrow"></a>
-          <a class="arrow2" href="#news">Узнать больше</a>
-        </div>
-
-        <div class="clothes">
-          <a href="#news">
-            <img class="man_woman" src="img/man_woman.png" alt="man_woman">
-          </a>
-          <p class="date">18.04.2023</p>
-          <h1>Новая линия одежды Nike</h1>
-          <p class="text">Ведущие в отрасли научные исследования в
-            области спорта и инноваций в продуктах
-            определяют уникальную междисциплинарную приктику дизайна Nike</p>
-          <a href="#news"><img class="arrow3" src="img/arrow.png" alt="arrow"></a>
-          <a class="arrow3" href="#news">Узнать больше</a>
-        </div> -->
 
       </div>
     </section>
-
-
-
 
     <section id="mailing">
 
@@ -491,45 +388,3 @@
       </div>
 
     </section>
-
-    <!-- <section id="footer">
-
-      <div class="footer">
-        <h1 class="one">ПОМОЩЬ И ИНФОРМАЦИЯ</h1>
-        <a class="help" href="#footer">Помощь</a>
-        <a class="otsleditj" href="#footer">Отследить заказ</a>
-        <a class="dostavka" href="#footer">Доставка и возврат</a>
-        <a class="oplata" href="#footer">Способы оплаты</a>
-        <a class="svjazj" href="#footer">Связаться с нами</a>
-
-        <h1 class="two">О NIKE</h1>
-        <a class="news" href="#footer">Новости</a>
-        <a class="vakansii" href="#footer">Вакансии</a>
-        <a class="investors" href="#footer">Инвесторам</a>
-        <a class="policies" href="#footer">Политика</a>
-
-        <h1 class="three">ПОКУПАТЕЛЯМ</h1>
-        <a class="shops" href="#footer">Ближайшие магазины</a>
-        <a class="sub" href="#footer">Подписаться на рассылку</a>
-        <a class="gifts" href="#footer">Подарочные сертификаты</a>
-
-        <img class="copyright" src="img/copyright.png" alt="copyright">
-        <p class="copyright">Nike, Inc.,2023 Все права защищены</p>
-        <img src="img/gps.png" alt="gps" class="gps">
-        <p class="gps">Эстония</p>
-        <a href="#footer"><img class="fb" src="img/facebook.png" alt="facebook"></a>
-        <a href="#footer"><img class="instagram" src="img/inst.png" alt="inst"></a>
-        <a href="#footer"><img class="twitter" src="img/twitter.png" alt="twitter"></a>
-
-      </div>
-      
-
-    </section>
-    
-    
-
-    
-    
-    
-</body>
-</html> -->
