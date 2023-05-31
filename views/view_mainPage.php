@@ -18,19 +18,16 @@
 </head>
 
 <body>
-
-
-
-    
+  
     <!-- SLIDER -->
-
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
+
+        <!-- SLIDER ELEMENT 1 -->
         <div class="carousel-item active" data-bs-interval="5000" style="background-color: #2C95F5;">
-          
           <div class="circle"></div>
 
-          
+          <!-- NAVBAR -->
           <a class="navbar-brand" href="index">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
@@ -86,9 +83,11 @@
           </div>
         </div>
 
-
+        <!-- SLIDER ELEMENT 2 -->
         <div class="carousel-item" data-bs-interval="5000" style="background-color: #FF3A4C;">
           <div class="circle1"></div>
+
+          <!-- NAVBAR -->
           <a class="navbar-brand" href="index.php">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
@@ -143,9 +142,11 @@
           </div>
         </div>
 
-
+        <!-- SLIDER ELEMENT 3 -->
         <div class="carousel-item" data-bs-interval="5000" style="background-color: #FCC026;">
           <div class="circle2"></div>
+
+          <!-- NAVBAR -->
           <a class="navbar-brand" href="index.php">
                     <img src="img/nikelogo1.png" alt="logo">
                   </a>
@@ -205,9 +206,10 @@
       </div>
       
     </div>
+    <!-- SLIDER END -->
+
 
     <!-- NEW ITEMS -->
-
     <section id="new">
       <div class="new">
         <h1 class="new">Новинки</h1>
@@ -215,34 +217,35 @@
 
         <?php foreach ($arrayAll[0] as $data) {?>
 
-
+          <!-- ССЫЛКА, НАЗНАЧАЕМАЯ ПО КЛАССУ -->
           <?php if ($data["class"] == "rectangle4") {
-              // echo 'yes';
-              $link = 'airforce.php';
-          
-        } else {
-          // echo 'no';
-          $link = "#";
+              $link = 'airforce.php';  
+          } else {
+              $link = "#";
+
         }?>
-        <div class="<?=$data["class"]?>">
+
+          <!-- ВЫВОД СПИСКА НОВИНОК -->
+          <div class="<?=$data["class"]?>">
+              
+            <a href=<?=$link ?>>
+              <img src="<?=$data["image_path"]?>" alt="lebron">
+            </a>
+            <p><?=$data["price"]?>€</p>
+            <p class="new">НОВИНКА</p>
+            <p class="name"><?=$data["name"]?></p>
+            <p class="colors"><?=$data["color_choice"]?></p>
             
-          <a href=<?=$link ?>>
-            <img src="<?=$data["image_path"]?>" alt="lebron">
-          </a>
-          <p><?=$data["price"]?>€</p>
-          <p class="new">НОВИНКА</p>
-          <p class="name"><?=$data["name"]?></p>
-          <p class="colors"><?=$data["color_choice"]?></p>
-          <!-- <img class="pink_heart" src="img/border_heart.png" alt="pink_heart"> -->
-        </div>
+          </div>
         <?php } ?>
         
       </div>
       
     </section>
+    <!-- NEW ITEMS END -->
+
 
     <!-- CATEGORIES -->
-
     <section id="categories">
       <div class="categories">
         <div class="men">
@@ -259,9 +262,10 @@
         </div>
       </div>
     </section>
+    <!-- CATEGORIES END -->
+
 
     <!-- COLLECTION -->
-
     <section id="collection">
       <div class="collection">
         <h1 class="collection">Коллекция Nike ACG</h1>
@@ -275,42 +279,28 @@
         
         <?php foreach ($arrayAll[2] as $data) {?>
 
+          <!-- СКИДКА, КОТОРАЯ НАЗНАЕТСЯ ТОЛЬКО ТАМ, ГДЕ НУЖНО -->
           <?php if ($data["discount"] == "1") {
-              // echo 'yes';
               $discount = '<span>СКИДКА</span>';
-          
           } else {
-            // echo 'no';
            $discount = "";
           }?>
 
+          <!-- КОЛИЧЕСТВО ЦВЕТОВ, КОТОРЫЕ ВЫВОДЯТСЯ ТОЛЬКО ТАМ, ГДЕ НУЖНО -->
           <?php if ($data["colors"] == "1") {
-              // echo 'yes';
               $color = 'Доступно +3 цвета';
-          
           } else {
-            // echo 'no';
-           $color = "";
+              $color = "";
           }?>
 
+          <!-- ТАБЛИЧКА "ПОПУЛЯРНОЕ", КОТОРАЯ ВЫВОДИТСЯ ТОЛЬКО ТАМ, ГДЕ НУЖНО -->
           <?php if ($data["popular"] == "1") {
-              // echo 'yes';
-
               $popularOn = true;
-          
           } else {
-            // echo 'no';
-           $popularOn = false;
+              $popularOn = false;
           }?>
-
-          <?php if ($data["star"] == "1") {
-              // echo 'yes';
-              $star = 'img/star.png';
           
-          } else {
-            // echo 'no';
-           $star = "";
-          }?>
+          <!-- ВЫВОД ТОВАРОВ КОЛЛЕКЦИИ -->
           <div class="<?=$data["class"]?>">
             <a href="#collection">
               <img src="<?=$data["image_path"]?>" alt="acg_tshirt">
@@ -321,20 +311,20 @@
             }
             ?>
             
-            
             <p class="through"><?=$data["price"]?></p>
             <p class="price"><?=$data["discount_price"].$discount?></p>
-            <?=$discount?>
             <p class="name"><?=$data["name"]?></p>
             <p class="colors"><?=$color?></p>
-            <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
-        </div>
+          </div>
         <?php } ?>
 
       </div>
       
     </section>
+    <!-- COLLECTION END -->
 
+
+    <!-- NEWS -->
     <section id="news">
       <div class="news">
         <h1 class="news">
@@ -345,7 +335,7 @@
         
         <?php foreach ($arrayAll[1] as $data) {?>
           
-
+          <!-- ВЫВОД НОВОСТЕЙ -->
           <div class="<?=$data["class"]?>">
             <a href="#news">
               <img class="<?=$data["image_class"]?>" src="<?=$data["image_path"]?>">
@@ -360,7 +350,10 @@
 
       </div>
     </section>
+    <!-- NEWS END -->
 
+
+    <!-- MAILING -->
     <section id="mailing">
 
       <div class="mailing">
@@ -375,16 +368,18 @@
         <p>Подпишись на рассылку, чтобы получать новости
           и предложения от семейства брендов Nike.</p>
 
-        
+        <!-- FORM -->
         <form action="mail_script.php" method="post">
           <p class="name">Ваше имя</p>
           <input class="name" type="name" name="name">
           <p class="email">Ваше E-mail</p>
           <input class="email" type="email" name="e-mail">
         </form>
+        <!-- FORM END -->
         <button>Подписаться</button>
         <p class="policy">Оформляя подписку ты принимаешь <a href="#mailing">Политику конфиденциальности</a>
           и <a href="#mailing">Условия использования</a> Nike</p>
       </div>
 
     </section>
+    <!-- MAILING END -->

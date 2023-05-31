@@ -15,56 +15,63 @@
 
 
   <section id="product">
-
+    <!-- NAVBAR -->
     <a class="navbar-brand" href="index.php">
-        <img src="img/logoblack.png" alt="logo">
-      </a>
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item1">
-            <a class="nav-link smooth-scroll" aria-current="page" href="index.php#new">Новинки</a>
-          </li>
-          <li class="nav-item2">
-            <a class="nav-link" href="#">Мужчины</a>
-          </li>
-          <li class="nav-item3">
-            <a class="nav-link" href="#">Женщины</a>
-          </li>
-          <li class="nav-item4">
-            <a class="nav-link" href="#">Дети</a>
-          </li>
-          <li class="nav-item5">
-            <a class="nav-link" href="#">Распродажи</a>
-          </li>
-          <li class="nav-item6">
-            <a class="nav-link" href="index.php#collection">Коллекции</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
-<a class="korzina" href="korzina.html">
-    <img class="korzina" src="img/korzinablue.png" alt="korzina">
-  </a>
-  <img class="heart" src="img/border_heart.png" alt="heart">
+      <img src="img/logoblack.png" alt="logo">
+    </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item1">
+                <a class="nav-link smooth-scroll" aria-current="page" href="index.php#new">Новинки</a>
+              </li>
+              <li class="nav-item2">
+                <a class="nav-link" href="#">Мужчины</a>
+              </li>
+              <li class="nav-item3">
+                <a class="nav-link" href="#">Женщины</a>
+              </li>
+              <li class="nav-item4">
+                <a class="nav-link" href="#">Дети</a>
+              </li>
+              <li class="nav-item5">
+                <a class="nav-link" href="#">Распродажи</a>
+              </li>
+              <li class="nav-item6">
+                <a class="nav-link" href="index.php#collection">Коллекции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <a class="korzina" href="korzina.html">
+      <img class="korzina" src="img/korzinablue.png" alt="korzina">
+    </a>
+    <img class="heart" src="img/border_heart.png" alt="heart">
+    <!-- NAVBAR END -->
 
+
+    <!-- PRODUCT -->
     <p class="unisex">Унисекс обувь   /Nike Air Force 1 Low CR7 By You</p>
     <img class="main" src="img/airforce/air_force.jpg" alt="airforce">
     <p class="model">Модель  DD3746-991</p>
     <h1 class="name">Nike Air Force 1 Low CR7 By You</h1>
     <p class="price">204 €</p>
+    <!-- COLOR CHOICE -->
     <img class="black_red" src="img/airforce/air_force.jpg" alt="br">
     <img class="gold" src="img/airforce/gold.jpg" alt="gold">
     <img class="wb" src="img/airforce/wb.jpg" alt="wb">
     <img class="white" src="img/airforce/white_force.jpg" alt="white">
     <img class="red" src="img/airforce/red.jpg" alt="red">
     <img class="black" src="img/airforce/black.jpg" alt="black">
+    <!-- COLOR CHOICE END -->
+
+    <!-- SIZE CHOICE -->
     <p class="razmer">Выбери размер</p>
     <a class="razmer" href="#">Расчет моего размера</a>
 
@@ -84,6 +91,7 @@
     <p class="razmer43">43</p>
     <div class="rectangle435"></div>
     <p class="razmer435">43.5</p>
+    <!-- SIZE CHOICE END -->
 
     <button class="korzina">Добавить в корзину</button>
 
@@ -110,43 +118,41 @@
       Если любишь сдержанную роскошь или суперпрокачанный дизайн, 
       то эти кроссовки будут именно такими, какими захочешь ты.
     </p>
+    <!-- PRODUCT END -->
 
     <div class="new">
       <h1 class="new">Тебе может понравиться</h1>
 
       <?php foreach ($arrayAll[3] as $data) {?>
 
+        <!-- СКИДКА, КОТОРАЯ НАЗНАЕТСЯ ТОЛЬКО ТАМ, ГДЕ НУЖНО -->
         <?php if ($data["discount"] == "1") {
-            // echo 'yes';
             $discount = '<span class="skidka">СКИДКА</span>';
-
         } else {
-          // echo 'no';
-        $discount = "";
+            $discount = "";
         }?>
 
+        <!-- НОВИНКА, КОТОРАЯ НАЗНАЕТСЯ ТОЛЬКО ТАМ, ГДЕ НУЖНО -->
         <?php if ($data["new"] == "1") {
-          $new = '<span>НОВИНКА</span>';
+            $new = '<span>НОВИНКА</span>';
         } else {
-          $new = "";
+            $new = "";
         }?>
 
+        <!-- ВЫВОД ТОВАРОВ "ТЕБЕ МОЖЕТ ПОНРАВИТЬСЯ" -->
         <div class="<?=$data["class"]?>">
           <a href="#collection">
             <img src="<?=$data["image_path"]?>" alt="lebron">
           </a>
-          
           <p class="new"><?=$new?></p>
-          
           <p class="through"><?=$data["price"]?></p>
           <p class="price"><?=$data["discount_price"].$discount?></p>
-          <?=$discount?>
           <p class="name"><?=$data["name"]?></p>
           <p class="colors"><?=$data["colors"]?></p>
-          <!-- <img class="border_heart" src="img/border_heart.png" alt="border_heart"> -->
         </div>
       <?php } ?>
     </div>
   </section>
 
+  <!-- СКРИПТ ОТВВЕЧАЮЩИЙ ЗА СМЕНУ КАРТИНОК И ВЫБОРА РАЗМЕРА ПО НАЖАТИЮ -->
   <script src="scripts.js"></script>
