@@ -1,6 +1,5 @@
 <?php
 session_start();
-//session_destroy();
 require_once('../models/CModel.php');//База данных
 
 include_once("modelAdmin/modelAdmin.php");

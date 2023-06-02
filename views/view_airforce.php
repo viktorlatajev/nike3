@@ -17,7 +17,7 @@
   <section id="product">
     <!-- NAVBAR -->
     <a class="navbar-brand" href="index.php">
-      <img src="img/logoblack.png" alt="logo">
+      <img src="img/logos/logoblack.png" alt="logo">
     </a>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -50,9 +50,9 @@
         </div>
     </nav>
     <a class="korzina" href="korzina.html">
-      <img class="korzina" src="img/korzinablue.png" alt="korzina">
+      <img class="korzina" src="img/icons/korzinablue.png" alt="korzina">
     </a>
-    <img class="heart" src="img/border_heart.png" alt="heart">
+    <img class="heart" src="img/icons/border_heart.png" alt="heart">
     <!-- NAVBAR END -->
 
 
@@ -104,8 +104,8 @@
 
   <section id="description">
 
-    <img class="br_verh" src="img/br_verh.jpg" alt="br_verh">
-    <img class="br_niz" src="img/br_niz.jpg" alt="br_niz">
+    <img class="br_verh" src="img/up/br_verh.jpg" alt="br_verh">
+    <img class="br_niz" src="img/down/br_niz.jpg" alt="br_niz">
 
 
     <p class="hdescr">Описание товара</p>
@@ -141,7 +141,7 @@
 
         <!-- ВЫВОД ТОВАРОВ "ТЕБЕ МОЖЕТ ПОНРАВИТЬСЯ" -->
         <div class="<?=$data["class"]?>">
-          <a href="#collection">
+          <a href="#description">
             <img src="<?=$data["image_path"]?>" alt="lebron">
           </a>
           <p class="new"><?=$new?></p>

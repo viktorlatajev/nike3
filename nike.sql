@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 18 2023 г., 10:11
+-- Время создания: Июн 02 2023 г., 12:32
 -- Версия сервера: 10.4.18-MariaDB
 -- Версия PHP: 7.4.18
 
@@ -46,10 +46,10 @@ CREATE TABLE `collections` (
 --
 
 INSERT INTO `collections` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`, `discount`, `discount_price`, `popular`, `star`) VALUES
-(1, 'NIKE ACG “4TH HORSEMAN”', 'img/horseman.jpg', '', '156 €', 'rectangle5', 0, 0, '', 0, 0),
-(2, 'NIKE ACG AIR NASU GORE-TEX', 'img/nasu.jpg', '', '127 €', 'rectangle6', 0, 0, '', 1, 1),
-(3, 'NIKE ACG MEN\'S LONG-SLEEVE T-SHIRT', 'img/acg_tshirt.jpg', '', '80 €', 'rectangle7', 0, 1, '59 €', 0, 0),
-(4, 'NIKE ACG REACT TERRA GOBE', 'img/react.jpg', '', '134 €', 'rectangle8', 1, 0, '', 0, 0);
+(1, 'NIKE ACG “4TH HORSEMAN”', 'img/collection/horseman.jpg', '', '156 €', 'rectangle5', 0, 0, '', 0, 0),
+(2, 'NIKE ACG AIR NASU GORE-TEX', 'img/collection/nasu.jpg', '', '127 €', 'rectangle6', 0, 0, '', 1, 1),
+(3, 'NIKE ACG MEN\'S LONG-SLEEVE T-SHIRT', 'img/collection/acg_tshirt.jpg', '', '80 €', 'rectangle7', 0, 1, '59 €', 0, 0),
+(4, 'NIKE ACG REACT TERRA GOBE', 'img/collection/react.jpg', '', '134 €', 'rectangle8', 1, 0, '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -95,10 +95,10 @@ CREATE TABLE `goods` (
 --
 
 INSERT INTO `goods` (`id`, `name`, `image_path`, `description`, `price`, `class`, `colors`) VALUES
-(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156', 'rectangle1', 1),
-(2, 'NIKE AIR VAPORMAX EVO', 'img/vapormax_evo1.jpg', '', '220', 'rectangle2', 1),
-(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/airforce/air_force.jpg', '', '204', 'rectangle4', 5),
-(9, 'NIKE FREE METCON 3', 'img/metcon2.jpg', '', '110', 'rectangle3', 6);
+(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/new_items/lebron.jpg', '', '156', 'rectangle1', 1),
+(2, 'NIKE AIR VAPORMAX EVO', 'img/new_items/vapormax_evo1.jpg', '', '220', 'rectangle2', 1),
+(4, 'NIKE AIR FORCE 1 LOW CR7 BY YOU', 'img/new_items/air_force.jpg', '', '204', 'rectangle4', 5),
+(9, 'NIKE FREE METCON 3', 'img/new_items/metcon2.jpg', '', '110', 'rectangle3', 6);
 
 -- --------------------------------------------------------
 
@@ -124,10 +124,10 @@ CREATE TABLE `likes` (
 --
 
 INSERT INTO `likes` (`id`, `name`, `image_path`, `description`, `price`, `colors`, `class`, `discount`, `discount_price`, `new`) VALUES
-(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/lebron.jpg', '', '156 €', 'Доступно +1 цвет', 'rectangle1', 0, '', 1),
-(2, 'NIKE AIR MAX ZM950', 'img/zm950.jpg', '', '165 €', 'Доступно +1 цвет', 'rectangle2', 1, '116 €', 0),
-(3, 'NIKE AIR MAX 270', 'img/air270.jpg', '', '148 €', 'Доступно +5 цветов', 'rectangle3', 0, '', 0),
-(4, 'NIKE AIR MAX 97', 'img/airmax97.jpg', '', '165 €', '', 'rectangle4', 0, '', 0);
+(1, 'LEBRON 18 LOW “NEON LIGHTS”', 'img/maybe_likes/lebron.jpg', '', '156 €', 'Доступно +1 цвет', 'rectangle1', 0, '', 1),
+(2, 'NIKE AIR MAX ZM950', 'img/maybe_likes/zm950.jpg', '', '165 €', 'Доступно +1 цвет', 'rectangle2', 1, '116 €', 0),
+(3, 'NIKE AIR MAX 270', 'img/maybe_likes/air270.jpg', '', '148 €', 'Доступно +5 цветов', 'rectangle3', 0, '', 0),
+(4, 'NIKE AIR MAX 97', 'img/maybe_likes/airmax97.jpg', '', '165 €', '', 'rectangle4', 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -152,9 +152,9 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `name`, `news_date`, `text`, `image_path`, `class`, `image_class`, `arrow_class`, `more`) VALUES
-(1, 'Что нового в Kyrie 7', '2023-04-10', '26 марта 2023г. - Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах', 'img/k7.jpg', 'k7', 'k7', 'arrow1', 'arrow1'),
-(2, 'Вы не можете остановить нас', '2023-04-18', 'Серия “Вы не можете остановить нас” от Nike\r\nпразднует возвращение в наши спортивные сооружения после беспрецедентного сезона ограничений.', 'img/ycss.jpg', 'ycss', 'ycss', 'arrow2', 'arrow2'),
-(3, 'Новая линия одежды Nike', '2023-04-25', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3');
+(1, 'Что нового в Kyrie 7', '2023-04-10', '26 марта 2023г. - Используя возможности вычислительного дизайна за счет взаимодействия с данными, Kyrie 7 выйдет 21 июня в четырех цветовых вариантах', 'img/news/k7.jpg', 'k7', 'k7', 'arrow1', 'arrow1'),
+(2, 'Вы не можете остановить нас', '2023-04-18', 'Серия “Вы не можете остановить нас” от Nike\r\nпразднует возвращение в наши спортивные сооружения после беспрецедентного сезона ограничений.', 'img/news/ycss.jpg', 'ycss', 'ycss', 'arrow2', 'arrow2'),
+(3, 'Новая линия одежды Nike', '2023-04-25', 'Ведущие в отрасли научные исследования в\r\nобласти спорта и инноваций в продуктах\r\nопределяют уникальную междисциплинарную практику дизайна Nike', 'img/news/man_woman.png', 'clothes', 'man_woman', 'arrow3', 'arrow3');
 
 -- --------------------------------------------------------
 
@@ -179,7 +179,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `job`, `email`, `login`, `password`, `status`, `registration_date`, `pass`) VALUES
-(1, 'admin', 'Portal admin', 'admin@nike.com', 'admin', '$2y$12$pxB2ofiiNZkxObmbBvBOyegwCjHCVFYhapjiSsdYXUaJ9Z1IH6pQW', 'admin', '2021-12-01', '12345');
+(1, 'admin', 'Portal admin', 'admin@nike.com', 'admin', '$2y$12$pxB2ofiiNZkxObmbBvBOyegwCjHCVFYhapjiSsdYXUaJ9Z1IH6pQW', 'admin', '2021-12-01', '123456');
 
 --
 -- Индексы сохранённых таблиц

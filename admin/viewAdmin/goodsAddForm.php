@@ -46,16 +46,13 @@
             <td>
                 <input type="text" name='colors' class='form-control' required >
 			</td>
-        </tr>
-		<!--  image-->		
+        </tr>	
         <tr>
             <td>Image</td>
             <td><div>
                 <input type="text" name='image_path' class='form-control' required>
             </div></td>
         </tr>	
-		<!--  end  image-->	
-		
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-primary" name="save">

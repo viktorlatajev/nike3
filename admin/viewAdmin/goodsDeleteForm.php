@@ -42,15 +42,12 @@
                 <input type="text" class='form-control' readonly required value="<?php echo $detail['colors']?>">
             </td>
         </tr>
-		<!--  image-->	
 		<tr>
             <td>OldPicture</td>
             <td><div>
-			<!--<img src="../images/<?php  //echo $detail['picture']; ?>" width=150>-->	
 			<?php echo $detail['image_path'];?>          
             </div></td>
-        </tr>      	
-		<!--  end  image-->			
+        </tr>      				
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-primary" name="save">

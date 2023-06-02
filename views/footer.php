@@ -19,13 +19,13 @@
         <a class="sub" href="#footer">Подписаться на рассылку</a>
         <a class="gifts" href="#footer">Подарочные сертификаты</a>
 
-        <img class="copyright" src="img/copyright.png" alt="copyright">
+        <img class="copyright" src="img/icons/copyright.png" alt="copyright">
         <p class="copyright">Nike, Inc.,2023 Все права защищены</p>
-        <img src="img/gps.png" alt="gps" class="gps">
+        <img src="img/icons/gps.png" alt="gps" class="gps">
         <p class="gps">Эстония</p>
-        <a href="#footer"><img class="fb" src="img/facebook.png" alt="facebook"></a>
-        <a href="#footer"><img class="instagram" src="img/inst.png" alt="inst"></a>
-        <a href="#footer"><img class="twitter" src="img/twitter.png" alt="twitter"></a>
+        <a href="#footer"><img class="fb" src="img/icons/facebook.png" alt="facebook"></a>
+        <a href="#footer"><img class="instagram" src="img/icons/inst.png" alt="inst"></a>
+        <a href="#footer"><img class="twitter" src="img/icons/twitter.png" alt="twitter"></a>
 
       </div>
       

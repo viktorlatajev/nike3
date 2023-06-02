@@ -3,15 +3,15 @@
 <title>Nike</title>
 <link href="public/css/bootstrap.css" rel="stylesheet">
 <link href="public/css/mystyle.css" rel="stylesheet">
-<!-- Font Awesome -->    <link rel="stylesheet" href="public/css/font-awesome.min.css">
-<!--   SCRIPT        -->	
+<link rel="stylesheet" href="public/css/font-awesome.min.css">
+
 <script src="public/js/jquery.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="public/js/ajaxupload.3.5.js"></script>	
 </head>
 <body>
     <div class="container">  
-<!-- -->
+
 <?php
 if(isset($_SESSION['userId']) && isset($_SESSION['sessionID'])){
 
@@ -19,7 +19,7 @@ if(isset($_SESSION['userId']) && isset($_SESSION['sessionID'])){
 			<div class="header clearfix">
             <nav class="navbar navbar-default">
 			<div class="container-fluid">          
-<!--Menuuu!!! -->	
+<!-- NAV -->
 
 
 	<?php
@@ -42,15 +42,17 @@ if(isset($_SESSION["status"]) && $_SESSION["status"]=="admin"){
 }else{
 	echo '<h4>У вас нет прав!</h4>';
 }
+
 	
     ?>
 		</div>
 		</nav>
 		</div>		
-<!-- --> 
+
 <?php
 }
 ?>
+<!-- NAV END -->
 
 		<div id="content" style="padding-top:20px; ">
 		
@@ -64,6 +66,6 @@ if(isset($_SESSION["status"]) && $_SESSION["status"]=="admin"){
       <footer class="footer">
         <p>&copy; 2019 Design Admin dashboard<i class="fa fa-child"></i></p>
       </footer>
-    </div> <!-- /container -->	
+    </div> 
 </body>
 </html>

@@ -32,7 +32,6 @@
             <td><input type='text' name='name' class='form-control' required 
 			value="<?php  echo $detail['name'] ?>" ></td>
         </tr>
-        
 		<tr>
             <td>Price</td>
             <td>
@@ -45,19 +44,15 @@
                 <input type="text" name='class' class='form-control' required value=<?php echo $detail['class']?>>
             </td>
         </tr>
-		<!--  image-->	
 		<tr>
-
             <td>Color</td>
             <td>
                 <input type="text" name='colors' class='form-control' required value="<?php echo $detail['colors']?>">
             </td>
-            
         </tr>
         <tr>
             <td>Old Image</td>
             <td><div>
-			
 			<input type="text" name='image_path' class='form-control' required value=<?php echo $detail["image_path"]?>>          
             </div></td>
         </tr>
@@ -66,8 +61,7 @@
             <td><div>
             <input type="text" name='image_path' class='form-control' required value="">
             </div></td>
-        </tr>	
-		<!--  end  image-->			
+        </tr>		
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-primary" name="save">

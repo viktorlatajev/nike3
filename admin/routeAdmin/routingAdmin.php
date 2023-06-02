@@ -66,11 +66,8 @@ elseif($path == 'profile') {
 	$response = ControllerAdmin::profileTable();
 }
 
-elseif($path == 'profileEdit') {	
 	
-	$response = ControllerAdmin::profileEditForm();		
-	
-}
+
 elseif($path == 'profileEditResult') {	
 			
 	$response = ControllerAdmin::profileEditResult();		
